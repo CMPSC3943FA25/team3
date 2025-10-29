@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Creator</title>
+    <script>
+      function submitForm(event) {
+        console.log(event);
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+
+        const json = {
+          name: formData.get("name"),
+          poisonous: formData.get("poisonous") !== null,
+          difficulty: formData.get("difficulty"),
+          water: {
+            start: Number(formData.get("water_start")),
+            end: Number(formData.get("water_end")),
+          },
+          repot: {
+            start: Number(formData.get("repot_start")),
+            end: Number(formData.get("repot_end")),
+          },
+          lighting: formData.get("lighting"),
+          humidity: {
+            min: Number(formData.get("min_humidity")),
+            max: Number(formData.get("max_humidity")),
+          },
+          hardiness: Array.from(
+            form.querySelectorAll('input[name="hardiness"]:checked')
+          ).map((x) => x.value),
+          temperature: {
+            min: Number(formData.get("min_temperature")),
+            max: Number(formData.get("max_temperature")),
+          },
+        };
+
+        console.log(json);
+
+        fetch("http://127.0.0.1:5000/api/plant", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(json),
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="submitForm(event)">
+      <label for="name">Plant Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+
+      <label for="poisonous">Poisonous?:</label>
+      <input type="checkbox" id="poisonous" name="poisonous" />
+      <br />
+
+      <label for="difficulty">Difficulty:</label>
+      <select name="difficulty" id="difficulty" required>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <br />
+
+      <label for="water_start">Water Every:</label>
+      <input type="number" id="water_start" name="water_start" required />
+      to
+      <input type="number" id="water_end" name="water_end" required />
+      <select name="period" id="period" required>
+        <option value="days">Days</option>
+        <option value="hours">Hours</option>
+      </select>
+      <br />
+
+      <p>Fertilize: ??? (not sure what input to add)</p>
+      <label for="prune">Prune:</label>
+
+      <input
+        type="checkbox"
+        id="user_preference"
+        name="user_preference"
+        value="user_preference"
+      />
+      <label for="user_preference">User Preference</label>
+
+      <br />
+
+      <label for="water_start">Repot Every:</label>
+      <input type="number" id="repot_start" name="repot_start" required />
+      to
+      <input type="number" id="repot_end" name="repot_end" required />
+      months
+      <br />
+
+      <label for="soil">Soil:</label>
+
+      <input type="checkbox" id="sand" name="sand" value="sand" />
+      <label for="sand">Sand</label>
+
+      <input type="checkbox" id="sod" name="sod" value="sod" />
+      <label for="sod">Sod</label>
+
+      <input
+        type="checkbox"
+        id="deciduous_soil"
+        name="deciduous_soil"
+        value="deciduous_soil"
+      />
+      <label for="deciduous_soil">Deciduous Soil</label>
+      <br />
+
+      <label for="lighting">Lighting:</label>
+      <select name="lighting" id="lighting" required>
+        <option value="full_sun">Full Sun</option>
+        <option value="shade">Shade</option>
+      </select>
+      <br />
+
+      <label for="min_humidity">Minimum Humidity:</label>
+      <input
+        type="number"
+        id="min_humidity"
+        name="min_humidity"
+        min="0"
+        max="100"
+        required
+      />%
+      <br />
+
+      <label for="max_humidity">Maximum Humidity:</label>
+      <input
+        type="number"
+        id="max_humidity"
+        name="max_humidity"
+        min="0"
+        max="100"
+        required
+      />%
+      <br />
+
+      <label for="hibernation">Hibernation:</label>
+      <select name="hibernation" id="hibernation" required>
+        <option value="cold_period">Cold Period</option>
+      </select>
+      <br />
+
+      <label for="hardiness">Hardiness Zones:</label>
+      <input type="checkbox" id="1a" name="hardiness" value="1a" />
+      <label for="1a">1a</label>
+
+      <input type="checkbox" id="1b" name="hardiness" value="1b" />
+      <label for="1b">1b</label>
+
+      <input type="checkbox" id="2a" name="hardiness" value="2a" />
+      <label for="2a">2a</label>
+
+      <input type="checkbox" id="2b" name="hardiness" value="2b" />
+      <label for="2b">2b</label>
+
+      <input type="checkbox" id="3a" name="hardiness" value="3a" />
+      <label for="3a">3a</label>
+
+      <input type="checkbox" id="3b" name="hardiness" value="3b" />
+      <label for="3b">3b</label>
+
+      <input type="checkbox" id="4a" name="hardiness" value="4a" />
+      <label for="4a">4a</label>
+
+      <input type="checkbox" id="4b" name="hardiness" value="4b" />
+      <label for="4b">4b</label>
+
+      <input type="checkbox" id="5a" name="hardiness" value="5a" />
+      <label for="5a">5a</label>
+
+      <input type="checkbox" id="5b" name="hardiness" value="5b" />
+      <label for="5b">5b</label>
+
+      <input type="checkbox" id="6a" name="hardiness" value="6a" />
+      <label for="6a">6a</label>
+
+      <input type="checkbox" id="6b" name="hardiness" value="6b" />
+      <label for="6b">6b</label>
+
+      <input type="checkbox" id="7a" name="hardiness" value="7a" />
+      <label for="7a">7a</label>
+
+      <input type="checkbox" id="7b" name="hardiness" value="7b" />
+      <label for="7b">7b</label>
+
+      <input type="checkbox" id="8a" name="hardiness" value="8a" />
+      <label for="8a">8a</label>
+
+      <input type="checkbox" id="8b" name="hardiness" value="8b" />
+      <label for="8b">8b</label>
+
+      <input type="checkbox" id="9a" name="hardiness" value="9a" />
+      <label for="9a">9a</label>
+
+      <input type="checkbox" id="9b" name="hardiness" value="9b" />
+      <label for="9b">9b</label>
+
+      <input type="checkbox" id="10a" name="hardiness" value="10a" />
+      <label for="10a">10a</label>
+
+      <input type="checkbox" id="10b" name="hardiness" value="10b" />
+      <label for="10b">10b</label>
+
+      <input type="checkbox" id="11a" name="hardiness" value="11a" />
+      <label for="11a">11a</label>
+
+      <input type="checkbox" id="11b" name="hardiness" value="11b" />
+      <label for="11b">11b</label>
+
+      <input type="checkbox" id="12a" name="hardiness" value="12a" />
+      <label for="12a">12a</label>
+
+      <input type="checkbox" id="12b" name="hardiness" value="12b" />
+      <label for="12b">12b</label>
+
+      <input type="checkbox" id="13a" name="hardiness" value="13a" />
+      <label for="13a">13a</label>
+
+      <input type="checkbox" id="13b" name="hardiness" value="13b" />
+      <label for="13b">13b</label>
+      <br />
+
+      <label for="min_temperature">Minimum Temperature:</label>
+      <input
+        type="number"
+        id="min_temperature"
+        name="min_temperature"
+        required
+      />F
+      <br />
+
+      <label for="max_temperature">Maximum Temperature:</label>
+      <input
+        type="number"
+        id="max_temperature"
+        name="max_temperature"
+        required
+      />F
+      <br />
+
+      <br />
+      <input type="submit" value="Create Plant" />
+    </form>
+  </body>
+</html>
