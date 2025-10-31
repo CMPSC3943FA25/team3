@@ -1,1 +1,34 @@
-[]
+{
+    "test": {
+        "poisonous": true,
+        "difficulty": "easy",
+        "water_every_n_hours": {
+            "start": 24,
+            "end": 48
+        },
+        "repot_every_n_months": {
+            "start": 2,
+            "end": 5
+        },
+        "soil": [
+            "sand",
+            "sod",
+            "deciduous_soil"
+        ],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "3a",
+            "3b",
+            "4a"
+        ],
+        "temperature": {
+            "min": 12,
+            "max": 44
+        }
+    }
+}

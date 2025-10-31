@@ -11,12 +11,12 @@ def create_plant():
         req = request.get_json()
         with open("plant_data.json", "r") as file:
             plant_data = json.load(file)
-        plant_data.append(req)
+        plant_data[next(iter(req))] = next(iter(req.values()))
         with open("plant_data.json", "w") as file:
             file.write(json.dumps(plant_data, indent=4))
         return "200 OK", 200
     except:
-        return "Internal Server Error", 500
+        return "Internal Server Error", 200
 
 @app.post("/api/search")
 def search_plants():
