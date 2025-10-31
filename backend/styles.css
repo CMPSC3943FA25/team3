@@ -1,0 +1,59 @@
+/* LLM GENERATED FILE - Team probably wants dark mode and I'm not spending time on css for an admin page lol */
+
+/* Body background and text */
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Labels */
+label {
+  color: #e0e0e0;
+}
+
+/* Text inputs, number inputs, and selects */
+input[type="text"],
+input[type="number"],
+select {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #90caf9;
+  outline: none;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  accent-color: #90caf9;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #272727;
+  color: #f0f0f0;
+  border: 1px solid #555;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #3a3a3a;
+}
+
+/* Preformatted output */
+pre {
+  background-color: #1f1f1f;
+  color: #cfcfcf;
+  padding: 10px;
+  border-radius: 4px;
+}

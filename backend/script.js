@@ -3,6 +3,11 @@ function submitForm(event) {
   const form = event.target;
   const formData = new FormData(form);
 
+  const formatted_name = formData
+    .get("name")
+    .toLowerCase()
+    .replaceAll(" ", "_");
+
   let water_start = Number(formData.get("water_start"));
   let water_end = Number(formData.get("water_end"));
 
@@ -12,7 +17,7 @@ function submitForm(event) {
   }
 
   const json = {
-    [formData.get("name")]: {
+    [formatted_name]: {
       poisonous: formData.get("poisonous") !== null,
       difficulty: formData.get("difficulty"),
       water_every_n_hours: {
@@ -42,6 +47,13 @@ function submitForm(event) {
   };
 
   console.log(json);
+  document.querySelector(
+    "#result"
+  ).innerText = `Updated Plant Data for ${formatted_name}:\n${JSON.stringify(
+    json,
+    null,
+    4
+  )}`;
 
   fetch("http://127.0.0.1:5000/api/plant", {
     method: "PUT",
@@ -51,3 +63,5 @@ function submitForm(event) {
     body: JSON.stringify(json),
   });
 }
+
+document.querySelector("form").addEventListener("submit", submitForm);
