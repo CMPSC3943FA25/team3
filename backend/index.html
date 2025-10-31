@@ -4,50 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plant Creator</title>
-    <script>
-      function submitForm(event) {
-        console.log(event);
-        event.preventDefault();
-        const form = event.target;
-        const formData = new FormData(form);
-
-        const json = {
-          name: formData.get("name"),
-          poisonous: formData.get("poisonous") !== null,
-          difficulty: formData.get("difficulty"),
-          water: {
-            start: Number(formData.get("water_start")),
-            end: Number(formData.get("water_end")),
-          },
-          repot: {
-            start: Number(formData.get("repot_start")),
-            end: Number(formData.get("repot_end")),
-          },
-          lighting: formData.get("lighting"),
-          humidity: {
-            min: Number(formData.get("min_humidity")),
-            max: Number(formData.get("max_humidity")),
-          },
-          hardiness: Array.from(
-            form.querySelectorAll('input[name="hardiness"]:checked')
-          ).map((x) => x.value),
-          temperature: {
-            min: Number(formData.get("min_temperature")),
-            max: Number(formData.get("max_temperature")),
-          },
-        };
-
-        console.log(json);
-
-        fetch("http://127.0.0.1:5000/api/plant", {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(json),
-        });
-      }
-    </script>
+    <script src="script.js"></script>
   </head>
   <body>
     <form onsubmit="submitForm(event)">
@@ -77,19 +34,6 @@
       </select>
       <br />
 
-      <p>Fertilize: ??? (not sure what input to add)</p>
-      <label for="prune">Prune:</label>
-
-      <input
-        type="checkbox"
-        id="user_preference"
-        name="user_preference"
-        value="user_preference"
-      />
-      <label for="user_preference">User Preference</label>
-
-      <br />
-
       <label for="water_start">Repot Every:</label>
       <input type="number" id="repot_start" name="repot_start" required />
       to
@@ -99,16 +43,16 @@
 
       <label for="soil">Soil:</label>
 
-      <input type="checkbox" id="sand" name="sand" value="sand" />
+      <input type="checkbox" id="sand" name="soil" value="sand" />
       <label for="sand">Sand</label>
 
-      <input type="checkbox" id="sod" name="sod" value="sod" />
+      <input type="checkbox" id="sod" name="soil" value="sod" />
       <label for="sod">Sod</label>
 
       <input
         type="checkbox"
         id="deciduous_soil"
-        name="deciduous_soil"
+        name="soil"
         value="deciduous_soil"
       />
       <label for="deciduous_soil">Deciduous Soil</label>
@@ -121,32 +65,25 @@
       </select>
       <br />
 
-      <label for="min_humidity">Minimum Humidity:</label>
-      <input
-        type="number"
-        id="min_humidity"
-        name="min_humidity"
-        min="0"
-        max="100"
-        required
-      />%
-      <br />
-
-      <label for="max_humidity">Maximum Humidity:</label>
-      <input
-        type="number"
-        id="max_humidity"
-        name="max_humidity"
-        min="0"
-        max="100"
-        required
-      />%
-      <br />
-
-      <label for="hibernation">Hibernation:</label>
-      <select name="hibernation" id="hibernation" required>
-        <option value="cold_period">Cold Period</option>
+      <label for="humidity">Humidity:</label>
+      <select name="humidity" id="humidity" required>
+        <!-- &gt; is greater than-->
+        <option value="high">High (&gt;60%)</option>
+        <option value="moderate">Moderate (40-60%)</option>
+        <!-- &lt; is less than-->
+        <option value="dry">Dry (&lt;40%)</option>
       </select>
+      <br />
+
+      <label for="seasons">Seasons:</label>
+      <input type="checkbox" id="spring" name="seasons" value="spring" />
+      <label for="spring">Spring</label>
+      <input type="checkbox" id="summer" name="seasons" value="summer" />
+      <label for="summer">Summer</label>
+      <input type="checkbox" id="fall" name="seasons" value="fall" />
+      <label for="fall">Fall</label>
+      <input type="checkbox" id="winter" name="seasons" value="winter" />
+      <label for="winter">Winter</label>
       <br />
 
       <label for="hardiness">Hardiness Zones:</label>
