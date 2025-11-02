@@ -1,1 +1,10 @@
-
+{
+  "Location: "Ada, OK", 
+  "Forecast": [
+    { "data": "2025-11-02", "low_f" :45, "high_f": 75, "rain_in": 0.1, "frost": false }, 
+    { "data": "2025-11-03", "low_f" :42, "high_f": 70, "rain_in": 0.0, "frost": true }, 
+    { "data": "2025-11-04", "low_f" :39, "high_f": 68, "rain_in": 0.05, "frost": true }, 
+    { "data": "2025-11-05", "low_f" :48, "high_f": 72, "rain_in": 0.0, "frost": false }, 
+    { "data": "2025-11-06", "low_f" :50, "high_f": 77, "rain_in": 0.2, "frost": false }, 
+  ]
+    }
