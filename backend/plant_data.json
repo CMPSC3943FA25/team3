@@ -22,8 +22,7 @@
             "summer",
             "fall"
         ],
-        "hardines
-        s": [
+        "hardiness": [
             "3a",
             "3b",
             "4a"
@@ -35,8 +34,9 @@
     }
 }
 
-    */Oklahoma Plant Information\*
+    {"_comment": "Oklahoma Plant Information", }
 {
+    
 "name" : "Tomato", 
     "type": "Vegetable", 
     "frost_tolerance": "low", 
@@ -67,7 +67,7 @@
     "frost_tolerance": "low", 
     "additional information": "Can handle Oklahoma dry spells once established"
 {
-}
+{
     "name" :"Potato", 
     "type": "Root", 
     "frost_tolerance": "medium", 
