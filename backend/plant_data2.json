@@ -34,44 +34,44 @@
     }
 }
 
-{
-    
-"name" : "Tomato", 
-    "type": "Vegetable", 
-    "frost_tolerance": "low", 
-    "additional information": "Plant Tomatos after last frost. Cover overnight if temps drop below 50F."
-}
-
-{
-"name" : "Cucumber", 
-    "type": "Vegetable", 
-    "frost_tolerance": "low", 
-    "additional information":"Hates Frost. Loves warm soil"
-}
-{
-"name" : "Strawberry", 
-    "type": "fruit", 
-    "frost_tolerance": "medium", 
-    "additional information": "flowers can be damages by freezes"
-}
-{    
-"name" : "Basil", 
-    "type": "Herb", 
-    "frost_tolerance": "low", 
-    "additional information":"Dies instantly in cold wind and frosts, plant in warm weather"
-}
-{
-    "name" : "Sunflower", 
-    "type": "Flower", 
-    "frost_tolerance": "low", 
-    "additional information": "Can handle Oklahoma dry spells once established"
-{
-{
-    "name" :"Potato", 
-    "type": "Root", 
-    "frost_tolerance": "medium", 
-    "additional information":"Hard freezes can damage leaves"
-}
+[
+    {
+        "name": "Tomato",
+        "type": "Vegetable",
+        "frost_tolerance": "low",
+        "additional information": "Plant Tomatoes after last frost. Cover overnight if temps drop below 50F."
+    },
+    {
+        "name": "Cucumber",
+        "type": "Vegetable",
+        "frost_tolerance": "low",
+        "additional information": "Hates Frost. Loves warm soil"
+    },
+    {
+        "name": "Strawberry",
+        "type": "fruit",
+        "frost_tolerance": "medium",
+        "additional information": "Flowers can be damaged by freezes."
+    },
+    {
+        "name": "Basil",
+        "type": "Herb",
+        "frost_tolerance": "low",
+        "additional information": "Dies instantly in cold wind and frosts, plant in warm weather"
+    },
+    {
+        "name": "Sunflower",
+        "type": "Flower",
+        "frost_tolerance": "low",
+        "additional information": "Can handle Oklahoma dry spells once established"
+    },
+    {
+        "name": "Potato",
+        "type": "Root",
+        "frost_tolerance": "medium",
+        "additional information": "Hard freezes can damage leaves"
+    }
+]
 
 
     
