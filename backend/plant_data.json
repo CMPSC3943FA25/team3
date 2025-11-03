@@ -1,5 +1,5 @@
-{
-    "begonia": {
+[
+    {
         "poisonous": true,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -29,9 +29,10 @@
         "temperature": {
             "min": 64,
             "max": 77
-        }
+        },
+        "name": "begonia"
     },
-    "black_eyed_susan": {
+    {
         "poisonous": true,
         "difficulty": "easy",
         "water_every_n_hours": {
@@ -69,9 +70,10 @@
         "temperature": {
             "min": 59,
             "max": 69
-        }
+        },
+        "name": "black_eyed_susan"
     },
-    "boston_fern": {
+    {
         "poisonous": false,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -103,9 +105,10 @@
         "temperature": {
             "min": 59,
             "max": 68
-        }
+        },
+        "name": "boston_fern"
     },
-    "aloe_vera_/_true_aloe": {
+    {
         "poisonous": true,
         "difficulty": "easy",
         "water_every_n_hours": {
@@ -140,9 +143,10 @@
         "temperature": {
             "min": 44,
             "max": 80
-        }
+        },
+        "name": "aloe_vera_/_true_aloe"
     },
-    "tomato_/_solanum_iycopersicum": {
+    {
         "poisonous": false,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -188,9 +192,10 @@
         "temperature": {
             "min": 59,
             "max": 82
-        }
+        },
+        "name": "tomato_/_solanum_iycopersicum"
     },
-    "aleo_vera": {
+    {
         "poisonous": true,
         "difficulty": "easy",
         "water_every_n_hours": {
@@ -225,9 +230,10 @@
         "temperature": {
             "min": 44,
             "max": 80
-        }
+        },
+        "name": "aleo_vera"
     },
-    "basil_/_ocimum_basilicum_/_sweet_basil": {
+    {
         "poisonous": false,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -257,9 +263,10 @@
         "temperature": {
             "min": 59,
             "max": 68
-        }
+        },
+        "name": "basil_/_ocimum_basilicum_/_sweet_basil"
     },
-    "spearmint_/_mentha_spicata": {
+    {
         "poisonous": true,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -293,9 +300,10 @@
         "temperature": {
             "min": 57,
             "max": 75
-        }
+        },
+        "name": "spearmint_/_mentha_spicata"
     },
-    "china_rose_/_rosa_chinensis_/_chinese_rose_/_bengal_rose": {
+    {
         "poisonous": false,
         "difficulty": "easy",
         "water_every_n_hours": {
@@ -337,9 +345,10 @@
         "temperature": {
             "min": 41,
             "max": 80
-        }
+        },
+        "name": "china_rose_/_rosa_chinensis_/_chinese_rose_/_bengal_rose"
     },
-    "cucumber_/_cucumis_sativus": {
+    {
         "poisonous": false,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -386,9 +395,10 @@
         "temperature": {
             "min": 60,
             "max": 80
-        }
+        },
+        "name": "cucumber_/_cucumis_sativus"
     },
-    "bunny_ear_cactus_/_opuntia_microdaisys": {
+    {
         "poisonous": false,
         "difficulty": "easy",
         "water_every_n_hours": {
@@ -418,9 +428,10 @@
         "temperature": {
             "min": 44,
             "max": 86
-        }
+        },
+        "name": "bunny_ear_cactus_/_opuntia_microdaisys"
     },
-    "calla_lily_/_zantedeschia_aethiopica": {
+    {
         "poisonous": false,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -454,9 +465,10 @@
         "temperature": {
             "min": 50,
             "max": 77
-        }
+        },
+        "name": "calla_lily_/_zantedeschia_aethiopica"
     },
-    "garden_strawberry_/_fragaria_x_ananassa": {
+    {
         "poisonous": false,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -495,9 +507,10 @@
         "temperature": {
             "min": 59,
             "max": 68
-        }
+        },
+        "name": "garden_strawberry_/_fragaria_x_ananassa"
     },
-    "peach_/_prunus_persica": {
+    {
         "poisonous": true,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -531,9 +544,10 @@
         "temperature": {
             "min": 44,
             "max": 64
-        }
+        },
+        "name": "peach_/_prunus_persica"
     },
-    "potato_/_solanum_tuberosum": {
+    {
         "poisonous": true,
         "difficulty": "easy",
         "water_every_n_hours": {
@@ -584,9 +598,10 @@
         "temperature": {
             "min": 44,
             "max": 70
-        }
+        },
+        "name": "potato_/_solanum_tuberosum"
     },
-    "poinsettia_/_euphorbia_pulcherrima": {
+    {
         "poisonous": true,
         "difficulty": "hard",
         "water_every_n_hours": {
@@ -616,9 +631,10 @@
         "temperature": {
             "min": 59,
             "max": 75
-        }
+        },
+        "name": "poinsettia_/_euphorbia_pulcherrima"
     },
-    "hibiscus_/_hibiscus_rosa-sinensis": {
+    {
         "poisonous": true,
         "difficulty": "hard",
         "water_every_n_hours": {
@@ -651,9 +667,10 @@
         "temperature": {
             "min": 55,
             "max": 72
-        }
+        },
+        "name": "hibiscus_/_hibiscus_rosa-sinensis"
     },
-    "water_oak_/_quercus_nigra": {
+    {
         "poisonous": true,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -689,9 +706,10 @@
         "temperature": {
             "min": 50,
             "max": 68
-        }
+        },
+        "name": "water_oak_/_quercus_nigra"
     },
-    "lemon_/_citrus_limon": {
+    {
         "poisonous": true,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -723,9 +741,10 @@
         "temperature": {
             "min": 59,
             "max": 68
-        }
+        },
+        "name": "lemon_/_citrus_limon"
     },
-    "sunflower_._helianthus_annuus_/_common_sunflower_/_wild_sunflower": {
+    {
         "poisonous": false,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -769,9 +788,10 @@
         "temperature": {
             "min": 50,
             "max": 66
-        }
+        },
+        "name": "sunflower_._helianthus_annuus_/_common_sunflower_/_wild_sunflower"
     },
-    "mexican_marigold_/_tagetes_erecta": {
+    {
         "poisonous": true,
         "difficulty": "easy",
         "water_every_n_hours": {
@@ -815,9 +835,10 @@
         "temperature": {
             "min": 50,
             "max": 59
-        }
+        },
+        "name": "mexican_marigold_/_tagetes_erecta"
     },
-    "tulip_/_tulipa_gesneriana": {
+    {
         "poisonous": true,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -853,9 +874,10 @@
         "temperature": {
             "min": 50,
             "max": 68
-        }
+        },
+        "name": "tulip_/_tulipa_gesneriana"
     },
-    "spotted_calla_lily_/_zantedeschia_albomaculata": {
+    {
         "poisonous": true,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -887,9 +909,10 @@
         "temperature": {
             "min": 32,
             "max": 68
-        }
+        },
+        "name": "spotted_calla_lily_/_zantedeschia_albomaculata"
     },
-    "sweet_potato_/_ipomoea_batatas": {
+    {
         "poisonous": true,
         "difficulty": "medium",
         "water_every_n_hours": {
@@ -919,6 +942,7 @@
         "temperature": {
             "min": 60,
             "max": 69
-        }
+        },
+        "name": "sweet_potato_/_ipomoea_batatas"
     }
-}
+]
