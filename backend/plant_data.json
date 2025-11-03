@@ -1,25 +1,108 @@
 {
-    "test": {
+    "begonia": {
+        "poisonous": true,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 24,
+            "end": 240
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [
+            "sand",
+            "humus",
+            "soddy",
+            "peat"
+        ],
+        "lighting": "part_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "10b"
+        ],
+        "temperature": {
+            "min": 64,
+            "max": 77
+        }
+    },
+    "black_eyed_susan": {
         "poisonous": true,
         "difficulty": "easy",
         "water_every_n_hours": {
-            "start": 48,
-            "end": 120
+            "start": 72,
+            "end": 336
         },
         "repot_every_n_months": {
-            "start": 30,
-            "end": 60
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10b"
+        ],
+        "temperature": {
+            "min": 59,
+            "max": 69
+        }
+    },
+    "boston_fern": {
+        "poisonous": false,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 168,
+            "end": 336
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
         },
         "soil": [
-            "sand"
+            "peat",
+            "perlite"
         ],
-        "lighting": "full_sun",
-        "humidity": "high",
-        "seasons": [],
-        "hardiness": [],
+        "lighting": "part_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer"
+        ],
+        "hardiness": [
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
         "temperature": {
-            "min": 60,
-            "max": 70
+            "min": 59,
+            "max": 68
         }
     },
     "aloe_vera_/_true_aloe": {
