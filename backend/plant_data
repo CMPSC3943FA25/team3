@@ -1,0 +1,841 @@
+{
+    "test": {
+        "poisonous": true,
+        "difficulty": "easy",
+        "water_every_n_hours": {
+            "start": 48,
+            "end": 120
+        },
+        "repot_every_n_months": {
+            "start": 30,
+            "end": 60
+        },
+        "soil": [
+            "sand"
+        ],
+        "lighting": "full_sun",
+        "humidity": "high",
+        "seasons": [],
+        "hardiness": [],
+        "temperature": {
+            "min": 60,
+            "max": 70
+        }
+    },
+    "aloe_vera_/_true_aloe": {
+        "poisonous": true,
+        "difficulty": "easy",
+        "water_every_n_hours": {
+            "start": 264,
+            "end": 576
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [
+            "sand",
+            "sod",
+            "deciduous_soil"
+        ],
+        "lighting": "full_sun",
+        "humidity": "dry",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 44,
+            "max": 80
+        }
+    },
+    "tomato_/_solanum_iycopersicum": {
+        "poisonous": false,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 168,
+            "end": 168
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [
+            "sod",
+            "deciduous_soil"
+        ],
+        "lighting": "full_sun",
+        "humidity": "high",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 59,
+            "max": 82
+        }
+    },
+    "aleo_vera": {
+        "poisonous": true,
+        "difficulty": "easy",
+        "water_every_n_hours": {
+            "start": 264,
+            "end": 576
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [
+            "sand",
+            "sod",
+            "deciduous_soil"
+        ],
+        "lighting": "full_sun",
+        "humidity": "dry",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 44,
+            "max": 80
+        }
+    },
+    "basil_/_ocimum_basilicum_/_sweet_basil": {
+        "poisonous": false,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 72,
+            "end": 168
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "10a",
+            "10b",
+            "11a",
+            "11b",
+            "12a",
+            "12b"
+        ],
+        "temperature": {
+            "min": 59,
+            "max": 68
+        }
+    },
+    "spearmint_/_mentha_spicata": {
+        "poisonous": true,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 192,
+            "end": 264
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b"
+        ],
+        "temperature": {
+            "min": 57,
+            "max": 75
+        }
+    },
+    "china_rose_/_rosa_chinensis_/_chinese_rose_/_bengal_rose": {
+        "poisonous": false,
+        "difficulty": "easy",
+        "water_every_n_hours": {
+            "start": 144,
+            "end": 192
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [
+            "sand",
+            "sod"
+        ],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b"
+        ],
+        "temperature": {
+            "min": 41,
+            "max": 80
+        }
+    },
+    "cucumber_/_cucumis_sativus": {
+        "poisonous": false,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 120,
+            "end": 168
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "1a",
+            "1b",
+            "2a",
+            "2b",
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 60,
+            "max": 80
+        }
+    },
+    "bunny_ear_cactus_/_opuntia_microdaisys": {
+        "poisonous": false,
+        "difficulty": "easy",
+        "water_every_n_hours": {
+            "start": 384,
+            "end": 432
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "dry",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b"
+        ],
+        "temperature": {
+            "min": 44,
+            "max": 86
+        }
+    },
+    "calla_lily_/_zantedeschia_aethiopica": {
+        "poisonous": false,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 168,
+            "end": 480
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [
+            "sand",
+            "sod"
+        ],
+        "lighting": "shade",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b"
+        ],
+        "temperature": {
+            "min": 50,
+            "max": 77
+        }
+    },
+    "garden_strawberry_/_fragaria_x_ananassa": {
+        "poisonous": false,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 96,
+            "end": 240
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "shade",
+        "humidity": "high",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b"
+        ],
+        "temperature": {
+            "min": 59,
+            "max": 68
+        }
+    },
+    "peach_/_prunus_persica": {
+        "poisonous": true,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 216,
+            "end": 336
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b"
+        ],
+        "temperature": {
+            "min": 44,
+            "max": 64
+        }
+    },
+    "potato_/_solanum_tuberosum": {
+        "poisonous": true,
+        "difficulty": "easy",
+        "water_every_n_hours": {
+            "start": 216,
+            "end": 264
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "1a",
+            "1b",
+            "2a",
+            "2b",
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b",
+            "12a",
+            "12b",
+            "13a",
+            "13b"
+        ],
+        "temperature": {
+            "min": 44,
+            "max": 70
+        }
+    },
+    "poinsettia_/_euphorbia_pulcherrima": {
+        "poisonous": true,
+        "difficulty": "hard",
+        "water_every_n_hours": {
+            "start": 264,
+            "end": 288
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "8a",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 59,
+            "max": 75
+        }
+    },
+    "hibiscus_/_hibiscus_rosa-sinensis": {
+        "poisonous": true,
+        "difficulty": "hard",
+        "water_every_n_hours": {
+            "start": 96,
+            "end": 144
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [
+            "sand",
+            "sod"
+        ],
+        "lighting": "full_sun",
+        "humidity": "high",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "hardiness": [
+            "8a",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 55,
+            "max": 72
+        }
+    },
+    "water_oak_/_quercus_nigra": {
+        "poisonous": true,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 168,
+            "end": 240
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "high",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b"
+        ],
+        "temperature": {
+            "min": 50,
+            "max": 68
+        }
+    },
+    "lemon_/_citrus_limon": {
+        "poisonous": true,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 144,
+            "end": 240
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 59,
+            "max": 68
+        }
+    },
+    "sunflower_._helianthus_annuus_/_common_sunflower_/_wild_sunflower": {
+        "poisonous": false,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 384,
+            "end": 432
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "2a",
+            "2b",
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 50,
+            "max": 66
+        }
+    },
+    "mexican_marigold_/_tagetes_erecta": {
+        "poisonous": true,
+        "difficulty": "easy",
+        "water_every_n_hours": {
+            "start": 216,
+            "end": 264
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "shade",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "2a",
+            "2b",
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b",
+            "11a",
+            "11b"
+        ],
+        "temperature": {
+            "min": 50,
+            "max": 59
+        }
+    },
+    "tulip_/_tulipa_gesneriana": {
+        "poisonous": true,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 408,
+            "end": 456
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "3a",
+            "3b",
+            "4a",
+            "4b",
+            "5a",
+            "5b",
+            "6a",
+            "6b",
+            "7a",
+            "7b",
+            "8a",
+            "8b"
+        ],
+        "temperature": {
+            "min": 50,
+            "max": 68
+        }
+    },
+    "spotted_calla_lily_/_zantedeschia_albomaculata": {
+        "poisonous": true,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 216,
+            "end": 264
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "7a",
+            "7b",
+            "8a",
+            "8b",
+            "9a",
+            "9b",
+            "10a",
+            "10b"
+        ],
+        "temperature": {
+            "min": 32,
+            "max": 68
+        }
+    },
+    "sweet_potato_/_ipomoea_batatas": {
+        "poisonous": true,
+        "difficulty": "medium",
+        "water_every_n_hours": {
+            "start": 168,
+            "end": 216
+        },
+        "repot_every_n_months": {
+            "start": 12,
+            "end": 12
+        },
+        "soil": [],
+        "lighting": "full_sun",
+        "humidity": "moderate",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "hardiness": [
+            "10a",
+            "10b",
+            "11a",
+            "11b",
+            "12a",
+            "12b"
+        ],
+        "temperature": {
+            "min": 60,
+            "max": 69
+        }
+    }
+}
