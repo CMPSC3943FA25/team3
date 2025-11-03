@@ -17,32 +17,31 @@ function submitForm(event) {
   }
 
   const json = {
-    [formatted_name]: {
-      poisonous: formData.get("poisonous") !== null,
-      difficulty: formData.get("difficulty"),
-      water_every_n_hours: {
-        start: water_start,
-        end: water_end,
-      },
-      repot_every_n_months: {
-        start: Number(formData.get("repot_start")),
-        end: Number(formData.get("repot_end")),
-      },
-      soil: Array.from(form.querySelectorAll('input[name="soil"]:checked')).map(
-        (x) => x.value
-      ),
-      lighting: formData.get("lighting"),
-      humidity: formData.get("humidity"),
-      seasons: Array.from(
-        form.querySelectorAll('input[name="seasons"]:checked')
-      ).map((x) => x.value),
-      hardiness: Array.from(
-        form.querySelectorAll('input[name="hardiness"]:checked')
-      ).map((x) => x.value),
-      temperature: {
-        min: Number(formData.get("min_temperature")),
-        max: Number(formData.get("max_temperature")),
-      },
+    name: formatted_name,
+    poisonous: formData.get("poisonous") !== null,
+    difficulty: formData.get("difficulty"),
+    water_every_n_hours: {
+      start: water_start,
+      end: water_end,
+    },
+    repot_every_n_months: {
+      start: Number(formData.get("repot_start")),
+      end: Number(formData.get("repot_end")),
+    },
+    soil: Array.from(form.querySelectorAll('input[name="soil"]:checked')).map(
+      (x) => x.value
+    ),
+    lighting: formData.get("lighting"),
+    humidity: formData.get("humidity"),
+    seasons: Array.from(
+      form.querySelectorAll('input[name="seasons"]:checked')
+    ).map((x) => x.value),
+    hardiness: Array.from(
+      form.querySelectorAll('input[name="hardiness"]:checked')
+    ).map((x) => x.value),
+    temperature: {
+      min: Number(formData.get("min_temperature")),
+      max: Number(formData.get("max_temperature")),
     },
   };
 
