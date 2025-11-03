@@ -57,7 +57,7 @@ def search_plants():
                 )
             ]
         
-        if "repot_every_n_months" in req:
+        if "repot_frequency" in req:
             report_frequency = req.get("repot_frequency")
             plant_data = [
                 p for p in plant_data if (
