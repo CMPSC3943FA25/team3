@@ -13,14 +13,14 @@ def create_plant():
         req = request.get_json()
 
         # Get "database" (current a file)
-        with open("plant_data.json", "r") as file:
+        with open("./data/plant_data.json", "r") as file:
             plant_data = json.load(file)
 
         # Append to database. Might add a filter later to overwrite with same name, but unnecessary for now
         plant_data.append(req)
 
         # Update database
-        with open("plant_data.json", "w") as file:
+        with open("./data/plant_data.json", "w") as file:
             file.write(json.dumps(plant_data, indent=4))
 
         return "200 OK", 200
