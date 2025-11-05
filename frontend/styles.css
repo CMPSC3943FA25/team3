@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  margin: 40px;
+  background-color: #f0fff0;
+}
+form,
+#results {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* For some reason this is the "clickable" cursor */
+}
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+}
+h2 {
+  margin-top: 0;
+}
+
+/* Plant Results */
+.plant {
+}
+
+/* Cascading pain */
+.checkbox-group label {
+  font-weight: normal;
+}
+.checkbox-group input {
+  width: auto;
+}

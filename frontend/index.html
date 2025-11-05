@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌿 GrowSmart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <scripts src="script.js"></script>
+  </head>
+  <body>
+    <h1 style="color: #2e7d32">🌿 GrowSmart</h1>
+
+    <form id="search_form">
+      <label>Poisonous</label>
+      <select id="poisonous">
+        <option value="">Any</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+
+      <label>Difficulty</label>
+      <select id="difficulty">
+        <option value="">Any</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <label>Lighting</label>
+      <select id="lighting">
+        <option value="">Any</option>
+        <option value="full_sun">Full Sun</option>
+        <option value="part_sun">Part Sun</option>
+        <option value="shade">Shade</option>
+      </select>
+
+      <label>Humidity</label>
+      <select id="humidity">
+        <option value="">Any</option>
+        <option value="high">High</option>
+        <option value="moderate">Moderate</option>
+        <option value="dry">Dry</option>
+      </select>
+
+      <label>Min Temperature (°F)</label>
+      <input type="number" id="min_temp" />
+
+      <label>Max Temperature (°F)</label>
+      <input type="number" id="max_temp" />
+
+      <label>Soil Types</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="soil" value="sand" />Sand</label>
+        <label><input type="checkbox" name="soil" value="sod" />Sod</label>
+        <label
+          ><input type="checkbox" name="soil" value="deciduous_soil" />Deciduous
+          Soil</label
+        >
+        <label><input type="checkbox" name="soil" value="humus" />Humus</label>
+        <label><input type="checkbox" name="soil" value="soddy" />Soddy</label>
+        <label><input type="checkbox" name="soil" value="peat" />Peat</label>
+        <label
+          ><input type="checkbox" name="soil" value="perlite" />Perlite</label
+        >
+      </div>
+
+      <label>Seasons</label>
+      <div class="checkbox-group">
+        <label
+          ><input type="checkbox" name="season" value="spring" />Spring</label
+        >
+        <label
+          ><input type="checkbox" name="season" value="summer" />Summer</label
+        >
+        <label><input type="checkbox" name="season" value="fall" />Fall</label>
+        <label
+          ><input type="checkbox" name="season" value="winter" />Winter</label
+        >
+      </div>
+
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="results">
+      <h2>Results</h2>
+      <div id="plant_list">No results yet.</div>
+    </div>
+  </body>
+</html>
