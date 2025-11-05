@@ -35,44 +35,249 @@
 }
 
 [
-    {
-        "name": "Tomato",
-        "type": "Vegetable",
-        "frost_tolerance": "low",
-        "additional information": "Plant Tomatoes after last frost. Cover overnight if temps drop below 50F."
-    },
-    {
-        "name": "Cucumber",
-        "type": "Vegetable",
-        "frost_tolerance": "low",
-        "additional information": "Hates Frost. Loves warm soil"
-    },
-    {
-        "name": "Strawberry",
-        "type": "fruit",
-        "frost_tolerance": "medium",
-        "additional information": "Flowers can be damaged by freezes."
-    },
-    {
-        "name": "Basil",
-        "type": "Herb",
-        "frost_tolerance": "low",
-        "additional information": "Dies instantly in cold wind and frosts, plant in warm weather"
-    },
-    {
-        "name": "Sunflower",
-        "type": "Flower",
-        "frost_tolerance": "low",
-        "additional information": "Can handle Oklahoma dry spells once established"
-    },
-    {
-        "name": "Potato",
-        "type": "Root",
-        "frost_tolerance": "medium",
-        "additional information": "Hard freezes can damage leaves"
-    }
+{
+"name": "Tomato",
+"type": "Vegetable",
+"frost_tolerance": "low",
+"additional_information": "Plant Tomatoes after last frost. Cover overnight if temps drop below 50°F.",
+"poisonous": false,
+"difficulty": "easy",
+"water_every_n_hours": {
+"start": 24,
+"end": 48
+},
+"repot_every_n_months": {
+"start": 2,
+"end": 5
+},
+"soil": [
+"sand",
+"sod",
+"deciduous_soil"
+],
+"lighting": "full_sun",
+"humidity": "moderate",
+"seasons": [
+"summer",
+"fall"
+],
+"hardiness": [
+"3a",
+"3b",
+"4a"
+],
+"temperature": {
+"min": 12,
+"max": 44
+}
+},
+{
+"name": "Cucumber",
+"type": "Vegetable",
+"frost_tolerance": "low",
+"additional_information": "Hates frost. Loves warm soil.",
+"poisonous": false,
+"difficulty": "easy",
+"water_every_n_hours": {
+"start": 24,
+"end": 48
+},
+"repot_every_n_months": {
+"start": 2,
+"end": 5
+},
+"soil": [
+"sand",
+"sod",
+"deciduous_soil"
+],
+"lighting": "full_sun",
+"humidity": "moderate",
+"seasons": [
+"summer",
+"fall"
+],
+"hardiness": [
+"3a",
+"3b",
+"4a"
+],
+"temperature": {
+"min": 12,
+"max": 44
+}
+},
+{
+"name": "Strawberry",
+"type": "Fruit",
+"frost_tolerance": "medium",
+"additional_information": "Flowers can be damaged by freezes.",
+"poisonous": false,
+"difficulty": "easy",
+"water_every_n_hours": {
+"start": 24,
+"end": 48
+},
+"repot_every_n_months": {
+"start": 2,
+"end": 5
+},
+"soil": [
+"sand",
+"sod",
+"deciduous_soil"
+],
+"lighting": "full_sun",
+"humidity": "moderate",
+"seasons": [
+"summer",
+"fall"
+],
+"hardiness": [
+"3a",
+"3b",
+"4a"
+],
+"temperature": {
+"min": 12,
+"max": 44
+}
+},
+{
+"name": "Basil",
+"type": "Herb",
+"frost_tolerance": "low",
+"additional_information": "Dies instantly in cold wind and frosts; plant in warm weather.",
+"poisonous": false,
+"difficulty": "easy",
+"water_every_n_hours": {
+"start": 24,
+"end": 48
+},
+"repot_every_n_months": {
+"start": 2,
+"end": 5
+},
+"soil": [
+"sand",
+"sod",
+"deciduous_soil"
+],
+"lighting": "full_sun",
+"humidity": "moderate",
+"seasons": [
+"summer",
+"fall"
+],
+"hardiness": [
+"3a",
+"3b",
+"4a"
+],
+"temperature": {
+"min": 12,
+"max": 44
+}
+}
 ]
-
+[
+{
+"name": "Blackberry",
+"type": "Fruit",
+"frost_tolerance": "medium",
+"additional_information": "Thrive in Oklahoma’s warm summers and mild winters; produce best in full sun",
+"poisonous": false,
+"difficulty": "easy",
+"water_every_n_hours": { "start": 48, "end": 72 },
+"repot_every_n_months": { "start": 12, "end": 24 },
+"soil": ["loam", "sand", "well_drained"],
+"lighting": "full_sun",
+"humidity": "moderate",
+"seasons": ["spring", "summer"],
+"hardiness": ["6a","6b","7a","7b","8a"],
+"temperature": { "min": -23, "max": 43 }
+},
+{
+"name": "Sand Plum",
+"type": "Fruit",
+"frost_tolerance": "high",
+"additional_information": "Wild native plum found across Oklahoma; used in jams",
+"poisonous": false,
+"difficulty": "medium",
+"water_every_n_hours": { "start": 72, "end": 144 },
+"repot_every_n_months": { "start": 0, "end": 0 },
+"soil": ["sand", "loam", "well_drained"],
+"lighting": "full_sun",
+"humidity": "low",
+"seasons": ["spring", "summer"],
+"hardiness": ["5a","5b","6a","6b","7a","7b","8a"],
+"temperature": { "min": -29, "max": 44 }
+},
+{
+"name": "Okra",
+"type": "Vegetable",
+"frost_tolerance": "low",
+"additional_information": "Loves heat and tolerates drought once seedlings established.",
+"poisonous": false,
+"difficulty": "easy",
+"water_every_n_hours": { "start": 48, "end": 72 },
+"repot_every_n_months": { "start": 2, "end": 5 },
+"soil": ["sand", "loam"],
+"lighting": "full_sun",
+"humidity": "low",
+"seasons": ["summer", "fall"],
+"hardiness": ["6a","6b","7a","7b","8a"],
+"temperature": { "min": 18, "max": 44 }
+},
+{
+"name": "Sweet Corn",
+"type": "Vegetable",
+"frost_tolerance": "low",
+"additional_information": "Thrives in full sun and well-drained loam",
+"poisonous": false,
+"difficulty": "medium",
+"water_every_n_hours": { "start": 24, "end": 48 },
+"repot_every_n_months": { "start": 3, "end": 6 },
+"soil": ["loam", "sandy_loam"],
+"lighting": "full_sun",
+"humidity": "moderate",
+"seasons": ["summer"],
+"hardiness": ["5b","6a","6b","7a","7b","8a"],
+"temperature": { "min": 15, "max": 43 }
+},
+{
+"name": "Indian Blanket",
+"type": "Flower",
+"frost_tolerance": "medium",
+"additional_information": "Oklahoma’s state wildflower! Attracts pollinators and thrives in sandy soil.",
+"poisonous": true,
+"difficulty": "easy",
+"water_every_n_hours": { "start": 72, "end": 144 },
+"repot_every_n_months": { "start": 0, "end": 0 },
+"soil": ["sand", "loam", "well_drained"],
+"lighting": "full_sun",
+"humidity": "low",
+"seasons": ["spring", "summer"],
+"hardiness": ["5a","5b","6a","6b","7a","7b","8a"],
+"temperature": { "min": -23, "max": 43 }
+},
+{
+"name": "Purple Coneflower",
+"type": "Flower",
+"frost_tolerance": "high",
+"additional_information": "Native prairie perennial; tolerates heat, humidity, and drought.",
+"poisonous": false,
+"difficulty": "easy",
+"water_every_n_hours": { "start": 72, "end": 120 },
+"repot_every_n_months": { "start": 0, "end": 0 },
+"soil": ["loam", "clay", "well_drained"],
+"lighting": "full_sun",
+"humidity": "moderate",
+"seasons": ["summer", "fall"],
+"hardiness": ["3a","3b","4a","4b","5a","5b","6a","6b","7a","7b","8a"],
+"temperature": { "min": -34, "max": 41 }
+}
+]
 
     
     
