@@ -1411,45 +1411,5 @@
             "min": -40,
             "max": 85
         }
-    },
-    {
-        "name": "blue_point_juniper_/_juniperus_chinensis_'blue_point'",
-        "poisonous": true,
-        "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 312
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
-        "soil": [],
-        "lighting": "full_sun",
-        "humidity": "moderate",
-        "seasons": [
-            "spring",
-            "summer",
-            "fall",
-            "winter"
-        ],
-        "hardiness": [
-            "4a",
-            "4b",
-            "5a",
-            "5b",
-            "6a",
-            "6b",
-            "7a",
-            "7b",
-            "8a",
-            "8b",
-            "9a",
-            "9b"
-        ],
-        "temperature": {
-            "min": -40,
-            "max": 85
-        }
     }
 ]
