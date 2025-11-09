@@ -13,8 +13,8 @@
             ],
             "mitigation": [
                 "Introduce natural predators like ladybugs.",
-                "Spray with insecticide",
-                "Prune infested growth"
+                "Prune infested growth",
+                "Plant garlic to deter Aphids. Plant Basil to repel Aphids."
             ],
             "notes": "Inspect undersides of leaves.",
             "severity": "moderate"
@@ -30,7 +30,8 @@
                 "large chewed holes"
             ],
             "mitigation": [
-                "Handpick and remove"
+                "Handpick and remove",
+                "Plant basil and marigolds to repel Hornworms. Plant dill to attract their natural predators."
             ],
             "notes": "Grows into the hummingbird moth, a nocturnal pollinator",
             "severity": "high"
@@ -47,7 +48,8 @@
             ],
             "mitigation": [
                 "Rinse plants with strong water spray",
-                "Increase humidity around plants."
+                "Increase humidity around plants.",
+                "Plant Chives and Garlic to repel, plant dill to attract natural predators."
                
             ],
             "notes": "Thrives in dry weather; common on tomatoes, beans, and ornamentals.",
@@ -66,7 +68,7 @@
             ],
             "mitigation": [
                 "Handpick caterpillars",
-                "Use non-toxic Insecticides."
+                "Plant sage and marigolds to repel, Plant rosemary to deter adult moths."
             ],
             "notes": "Attracted to members of the cabbage family; grows into white moths and/or butterflies, depending on species",
             "severity": "moderate"
@@ -83,7 +85,8 @@
             ],
             "mitigation": [
                  "Remove plant debris",
-                "Till soil before planting to expose larvae"
+                "Till the soil before planting to expose larvae",
+                "Plant dill, parsley, and cilantro to deter and attract natural predators."
             ],
             "notes": "Active at night; affects tomatoes, peppers, and other pottable plants.",
             "severity": "high"
@@ -102,7 +105,8 @@
             ],
             "mitigation": [
                 "Hand remove bugs and eggs",
-                "Clean up plant debris after harvest."
+                "Clean up plant debris after harvest.",
+                "Plant radish and mint to deter, plant marigolds to protect the plant from pests."
             ],
             "notes": "A major pest of summer and winter squash; can transmit plant disease.",
             "severity": "high"
@@ -120,8 +124,8 @@
                 "leaf discoloration"
             ],
             "mitigation": [
-               "Use Mulch to restrict the beetles' movement",
-                "Apply neem oil or pyrethrin spray."
+               "Use Mulch to restrict the beetles' movement.",
+               "Plant catnip and marigolds to repel, plant mint to drive them away."
             ],
             "notes": "Common on eggplant, tomatoes, and leafy greens in Oklahoma gardens.",
             "severity": "moderate"
@@ -139,6 +143,7 @@
             ],
             "mitigation": [
                 "Use netting",
+                "Plant cilantro, horseradish, marigolds, and lavender to repel pests.",
                 "Encourage birds and beneficial insects"
             ],
             "notes": "Populations increase during dry summers; very common across Oklahoma.",
