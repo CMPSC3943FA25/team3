@@ -1,0 +1,148 @@
+{
+    "pests": [
+        {
+            "name": "Aphids",
+            "description": "Small sap-sucking insects that cluster on seedlings",
+            "season": [
+                "spring",
+                "summer"
+            ],
+            "symptoms": [
+                "curled leaves",
+                "stunted growth"
+            ],
+            "mitigation": [
+                "Introduce natural predators like ladybugs.",
+                "Spray with insecticide",
+                "Prune infested growth"
+            ],
+            "notes": "Inspect undersides of leaves.",
+            "severity": "moderate"
+        },
+        {
+            "name": "Tomato hornworm",
+            "description": "Green caterpillars that chew through tomato leaves and fruit.",
+            "season": [
+                "summer"
+            ],
+            "symptoms": [
+                "missing leaves",
+                "large chewed holes"
+            ],
+            "mitigation": [
+                "Handpick and remove"
+            ],
+            "notes": "Grows into the hummingbird moth, a nocturnal pollinator",
+            "severity": "high"
+        },
+        {
+            "name": "Spider mites",
+            "description": "Tiny red or yellow mites that feed on plants, causing damage to leaves.",
+            "season": [
+                "summer"
+            ],
+            "symptoms": [
+                "fine webbing",
+                "yellow speckles on leaves"
+            ],
+            "mitigation": [
+                "Rinse plants with strong water spray",
+                "Increase humidity around plants."
+               
+            ],
+            "notes": "Thrives in dry weather; common on tomatoes, beans, and ornamentals.",
+            "severity": "moderate"
+        },
+        {
+            "name": "Cabbage worms",
+            "description": "Green caterpillars that chew holes in brassica vegetables.",
+            "season": [
+                "spring",
+                "fall"
+            ],
+            "symptoms": [
+                "chewed leaves",
+                "damaged vegetable heads"
+            ],
+            "mitigation": [
+                "Handpick caterpillars",
+                "Use non-toxic Insecticides."
+            ],
+            "notes": "Attracted to members of the cabbage family; grows into white moths and/or butterflies, depending on species",
+            "severity": "moderate"
+        },
+        {
+            "name": "Cutworms",
+            "description": "Larvae that hide in soil and cut young seedlings",
+            "season": [
+                "spring"
+            ],
+            "symptoms": [
+                "seedlings cut off",
+                "wilting young plants"
+            ],
+            "mitigation": [
+                 "Remove plant debris",
+                "Till soil before planting to expose larvae"
+            ],
+            "notes": "Active at night; affects tomatoes, peppers, and other pottable plants.",
+            "severity": "high"
+        },
+        {
+            "name": "Squash bugs",
+            "description": "Flat, brown insects that feed on squash and pumpkins.",
+            "season": [
+                "summer",
+                "winter"
+            ],
+            "symptoms": [
+                "yellow spots",
+                "wilting",
+                "clusters of eggs on leaves"
+            ],
+            "mitigation": [
+                "Hand remove bugs and eggs",
+                "Clean up plant debris after harvest."
+            ],
+            "notes": "A major pest of summer and winter squash; can transmit plant disease.",
+            "severity": "high"
+        },
+        {
+            "name": "Flea beetles",
+            "description": "Small jumping beetles that chew tiny holes in leaves of many plants.",
+            "season": [
+                "spring",
+                "summer"
+            ],
+            "symptoms": [
+                "small round holes",
+                "poor seedling growth",
+                "leaf discoloration"
+            ],
+            "mitigation": [
+               "Use Mulch to restrict the beetles' movement",
+                "Apply neem oil or pyrethrin spray."
+            ],
+            "notes": "Common on eggplant, tomatoes, and leafy greens in Oklahoma gardens.",
+            "severity": "moderate"
+        },
+        {
+            "name": "Grasshoppers",
+            "description": "Multi-colored large jumping/flying insects that chew leaves.",
+            "season": [
+                "summer",
+                "fall"
+            ],
+            "symptoms": [
+                "ragged leaf edges",
+                "missing flowers"
+            ],
+            "mitigation": [
+                "Use netting",
+                "Encourage birds and beneficial insects"
+            ],
+            "notes": "Populations increase during dry summers; very common across Oklahoma.",
+            "severity": "high"
+        }
+    ]
+}
