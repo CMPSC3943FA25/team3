@@ -1,0 +1,218 @@
+{
+  "Herbs": [
+    {
+      "name": "Basil",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves",
+      "season": "Summer",
+      "zone": "5-11"
+    },
+    {
+      "name": "Mint",
+      "type": "Herb",
+      "sunlight": "Partial Shade",
+      "ediblePart": "Leaves",
+      "season": "Spring–Fall",
+      "zone": "3-11"
+    },
+    {
+      "name": "Rosemary",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves",
+      "season": "Year-round",
+      "zone": "7-10"
+    },
+    {
+      "name": "Thyme",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves",
+      "season": "Spring–Fall",
+      "zone": "5-9"
+    },
+    {
+      "name": "Sage",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves",
+      "season": "Spring–Fall",
+      "zone": "4-8"
+    },
+    {
+      "name": "Oregano",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves",
+      "season": "Summer",
+      "zone": "5-10"
+    },
+    {
+      "name": "Lemon Balm",
+      "type": "Herb",
+      "sunlight": "Partial Sun",
+      "ediblePart": "Leaves",
+      "season": "Spring–Fall",
+      "zone": "4-9"
+    },
+    {
+      "name": "Chamomile",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Flowers",
+      "season": "Summer",
+      "zone": "3-9"
+    }
+  ],
+  "Edible Flowers": [
+    {
+      "name": "Nasturtium",
+      "type": "Flower",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves & Flowers",
+      "season": "Summer",
+      "zone": "2-11"
+    },
+    {
+      "name": "Calendula",
+      "type": "Flower",
+      "sunlight": "Full Sun",
+      "ediblePart": "Petals",
+      "season": "Spring–Fall",
+      "zone": "2-11"
+    },
+    {
+      "name": "Pansy",
+      "type": "Flower",
+      "sunlight": "Partial Shade",
+      "ediblePart": "Flowers",
+      "season": "Spring–Fall",
+      "zone": "4-8"
+    },
+    {
+      "name": "Borage",
+      "type": "Flower",
+      "sunlight": "Full Sun",
+      "ediblePart": "Flowers",
+      "season": "Summer",
+      "zone": "3-10"
+    },
+    {
+      "name": "Chive Blossom",
+      "type": "Flower",
+      "sunlight": "Full Sun",
+      "ediblePart": "Flowers",
+      "season": "Spring",
+      "zone": "3-9"
+    },
+    {
+      "name": "Lavender",
+      "type": "Flower",
+      "sunlight": "Full Sun",
+      "ediblePart": "Flowers",
+      "season": "Summer",
+      "zone": "5-9"
+    },
+    {
+      "name": "Rose",
+      "type": "Flower",
+      "sunlight": "Full Sun",
+      "ediblePart": "Petals",
+      "season": "Spring–Summer",
+      "zone": "4-9"
+    }
+  ],
+  "Other Edible Plants": [
+    {
+      "name": "Dandelion",
+      "type": "Wild Green",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves, Roots, Flowers",
+      "season": "Spring",
+      "zone": "3-10"
+    },
+    {
+      "name": "Lamb’s Quarters",
+      "type": "Wild Green",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves",
+      "season": "Summer",
+      "zone": "3-10"
+    },
+    {
+      "name": "Plantain (weed)",
+      "type": "Wild Green",
+      "sunlight": "Partial Sun",
+      "ediblePart": "Leaves",
+      "season": "Spring–Summer",
+      "zone": "3-10"
+    },
+    {
+      "name": "Amaranth",
+      "type": "Grain/Leafy Green",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves & Seeds",
+      "season": "Summer",
+      "zone": "2-11"
+    },
+    {
+      "name": "Chickweed",
+      "type": "Wild Green",
+      "sunlight": "Partial Shade",
+      "ediblePart": "Leaves",
+      "season": "Spring",
+      "zone": "3-9"
+    },
+    {
+      "name": "Red Clover",
+      "type": "Wild Flower",
+      "sunlight": "Full Sun",
+      "ediblePart": "Flowers",
+      "season": "Summer",
+      "zone": "3-9"
+    },
+    {
+      "name": "Stinging Nettle",
+      "type": "Wild Green",
+      "sunlight": "Partial Shade",
+      "ediblePart": "Leaves (cooked)",
+      "season": "Spring",
+      "zone": "3-9"
+    }
+  ],
+  "Tea & Medicinal Plants": [
+    {
+      "name": "Lemon Verbena",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves",
+      "season": "Summer",
+      "zone": "8-11"
+    },
+    {
+      "name": "Echinacea",
+      "type": "Flower",
+      "sunlight": "Full Sun",
+      "ediblePart": "Roots & Petals",
+      "season": "Summer",
+      "zone": "3-9"
+    },
+    {
+      "name": "Stevia",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves",
+      "season": "Summer",
+      "zone": "8-11"
+    },
+    {
+      "name": "Anise Hyssop",
+      "type": "Herb",
+      "sunlight": "Full Sun",
+      "ediblePart": "Leaves & Flowers",
+      "season": "Summer",
+      "zone": "4-9"
+    }
+  ]
+}
