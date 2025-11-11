@@ -42,7 +42,17 @@ h2 {
 }
 
 /* Plant Results */
+#plant_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .plant {
+  background-color: #f9f9f9;
+  width: 30%;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 /* Cascading pain */
