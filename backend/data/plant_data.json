@@ -30,7 +30,9 @@
             "min": 64,
             "max": 77
         },
-        "name": "begonia"
+        "name": "begonia",
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "poisonous": true,
@@ -71,7 +73,9 @@
             "min": 59,
             "max": 69
         },
-        "name": "black_eyed_susan"
+        "name": "black_eyed_susan",
+        "max_height_feet": 3,
+        "max_spread_feet": 3
     },
     {
         "poisonous": false,
@@ -106,7 +110,9 @@
             "min": 59,
             "max": 68
         },
-        "name": "boston_fern"
+        "name": "boston_fern",
+        "max_height_feet": 3,
+        "max_spread_feet": 3
     },
     {
         "poisonous": true,
@@ -144,7 +150,9 @@
             "min": 44,
             "max": 80
         },
-        "name": "aloe_vera_/_true_aloe"
+        "name": "aloe_vera_/_true_aloe",
+        "max_height_feet": 2,
+        "max_spread_feet": 3
     },
     {
         "poisonous": false,
@@ -193,45 +201,9 @@
             "min": 59,
             "max": 82
         },
-        "name": "tomato_/_solanum_iycopersicum"
-    },
-    {
-        "poisonous": true,
-        "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 576
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
-        "soil": [
-            "sand",
-            "sod",
-            "deciduous_soil"
-        ],
-        "lighting": "full_sun",
-        "humidity": "dry",
-        "seasons": [
-            "spring",
-            "summer",
-            "fall",
-            "winter"
-        ],
-        "hardiness": [
-            "9a",
-            "9b",
-            "10a",
-            "10b",
-            "11a",
-            "11b"
-        ],
-        "temperature": {
-            "min": 44,
-            "max": 80
-        },
-        "name": "aleo_vera"
+        "name": "tomato_/_solanum_iycopersicum",
+        "max_height_feet": 10,
+        "max_spread_feet": 6
     },
     {
         "poisonous": false,
@@ -264,7 +236,9 @@
             "min": 59,
             "max": 68
         },
-        "name": "basil_/_ocimum_basilicum_/_sweet_basil"
+        "name": "basil_/_ocimum_basilicum_/_sweet_basil",
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "poisonous": true,
@@ -301,7 +275,9 @@
             "min": 57,
             "max": 75
         },
-        "name": "spearmint_/_mentha_spicata"
+        "name": "spearmint_/_mentha_spicata",
+        "max_height_feet": 2,
+        "max_spread_feet": 3
     },
     {
         "poisonous": false,
@@ -346,7 +322,9 @@
             "min": 41,
             "max": 80
         },
-        "name": "china_rose_/_rosa_chinensis_/_chinese_rose_/_bengal_rose"
+        "name": "china_rose_/_rosa_chinensis_/_chinese_rose_/_bengal_rose",
+        "max_height_feet": 6,
+        "max_spread_feet": 6
     },
     {
         "poisonous": false,
@@ -396,7 +374,9 @@
             "min": 60,
             "max": 80
         },
-        "name": "cucumber_/_cucumis_sativus"
+        "name": "cucumber_/_cucumis_sativus",
+        "max_height_feet": 10,
+        "max_spread_feet": 4
     },
     {
         "poisonous": false,
@@ -429,7 +409,9 @@
             "min": 44,
             "max": 86
         },
-        "name": "bunny_ear_cactus_/_opuntia_microdaisys"
+        "name": "bunny_ear_cactus_/_opuntia_microdaisys",
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "poisonous": false,
@@ -466,7 +448,9 @@
             "min": 50,
             "max": 77
         },
-        "name": "calla_lily_/_zantedeschia_aethiopica"
+        "name": "calla_lily_/_zantedeschia_aethiopica",
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "poisonous": false,
@@ -508,7 +492,9 @@
             "min": 59,
             "max": 68
         },
-        "name": "garden_strawberry_/_fragaria_x_ananassa"
+        "name": "garden_strawberry_/_fragaria_x_ananassa",
+        "max_height_feet": 1,
+        "max_spread_feet": 2
     },
     {
         "poisonous": true,
@@ -545,7 +531,9 @@
             "min": 44,
             "max": 64
         },
-        "name": "peach_/_prunus_persica"
+        "name": "peach_/_prunus_persica",
+        "max_height_feet": 25,
+        "max_spread_feet": 20
     },
     {
         "poisonous": true,
@@ -599,7 +587,9 @@
             "min": 44,
             "max": 70
         },
-        "name": "potato_/_solanum_tuberosum"
+        "name": "potato_/_solanum_tuberosum",
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "poisonous": true,
@@ -632,7 +622,9 @@
             "min": 59,
             "max": 75
         },
-        "name": "poinsettia_/_euphorbia_pulcherrima"
+        "name": "poinsettia_/_euphorbia_pulcherrima",
+        "max_height_feet": 10,
+        "max_spread_feet": 5
     },
     {
         "poisonous": true,
@@ -668,7 +660,9 @@
             "min": 55,
             "max": 72
         },
-        "name": "hibiscus_/_hibiscus_rosa-sinensis"
+        "name": "hibiscus_/_hibiscus_rosa-sinensis",
+        "max_height_feet": 10,
+        "max_spread_feet": 10
     },
     {
         "poisonous": true,
@@ -707,7 +701,9 @@
             "min": 50,
             "max": 68
         },
-        "name": "water_oak_/_quercus_nigra"
+        "name": "water_oak_/_quercus_nigra",
+        "max_height_feet": 80,
+        "max_spread_feet": 60
     },
     {
         "poisonous": true,
@@ -742,7 +738,9 @@
             "min": 59,
             "max": 68
         },
-        "name": "lemon_/_citrus_limon"
+        "name": "lemon_/_citrus_limon",
+        "max_height_feet": 20,
+        "max_spread_feet": 15
     },
     {
         "poisonous": false,
@@ -789,7 +787,9 @@
             "min": 50,
             "max": 66
         },
-        "name": "sunflower_._helianthus_annuus_/_common_sunflower_/_wild_sunflower"
+        "name": "sunflower_._helianthus_annuus_/_common_sunflower_/_wild_sunflower",
+        "max_height_feet": 10,
+        "max_spread_feet": 2
     },
     {
         "poisonous": true,
@@ -836,7 +836,9 @@
             "min": 50,
             "max": 59
         },
-        "name": "mexican_marigold_/_tagetes_erecta"
+        "name": "mexican_marigold_/_tagetes_erecta",
+        "max_height_feet": 3,
+        "max_spread_feet": 2
     },
     {
         "poisonous": true,
@@ -875,7 +877,9 @@
             "min": 50,
             "max": 68
         },
-        "name": "tulip_/_tulipa_gesneriana"
+        "name": "tulip_/_tulipa_gesneriana",
+        "max_height_feet": 2,
+        "max_spread_feet": 1
     },
     {
         "poisonous": true,
@@ -910,7 +914,9 @@
             "min": 32,
             "max": 68
         },
-        "name": "spotted_calla_lily_/_zantedeschia_albomaculata"
+        "name": "spotted_calla_lily_/_zantedeschia_albomaculata",
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "poisonous": true,
@@ -943,7 +949,9 @@
             "min": 60,
             "max": 69
         },
-        "name": "sweet_potato_/_ipomoea_batatas"
+        "name": "sweet_potato_/_ipomoea_batatas",
+        "max_height_feet": 1,
+        "max_spread_feet": 4
     },
     {
         "name": "golden_pothos_/_epipremnum_aureum_/_silver_vine",
@@ -979,7 +987,9 @@
         "temperature": {
             "min": 60,
             "max": 90
-        }
+        },
+        "max_height_feet": 10,
+        "max_spread_feet": 6
     },
     {
         "name": "snake_plant_/_sansevieria_trifasciata",
@@ -1015,7 +1025,9 @@
         "temperature": {
             "min": 60,
             "max": 83
-        }
+        },
+        "max_height_feet": 3,
+        "max_spread_feet": 2
     },
     {
         "name": "spider_plant_/_chlorophytum_comosum",
@@ -1048,7 +1060,9 @@
         "temperature": {
             "min": 50,
             "max": 80
-        }
+        },
+        "max_height_feet": 2,
+        "max_spread_feet": 3
     },
     {
         "name": "jade_plant_/_crassula_ovata",
@@ -1083,7 +1097,9 @@
         "temperature": {
             "min": 50,
             "max": 83
-        }
+        },
+        "max_height_feet": 3,
+        "max_spread_feet": 3
     },
     {
         "name": "flamingo_lily_/_anthurium_andraeanum",
@@ -1117,7 +1133,9 @@
         "temperature": {
             "min": 64,
             "max": 85
-        }
+        },
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "name": "rubber_plant_/_ficus_elastica",
@@ -1150,7 +1168,9 @@
         "temperature": {
             "min": 59,
             "max": 75
-        }
+        },
+        "max_height_feet": 50,
+        "max_spread_feet": 30
     },
     {
         "name": "moth_orchid_/_phalaenopsis_amabilis",
@@ -1181,7 +1201,9 @@
         "temperature": {
             "min": 64,
             "max": 85
-        }
+        },
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "name": "thanksgiving_cactus_/_schlumbergera_truncata",
@@ -1212,7 +1234,9 @@
         "temperature": {
             "min": 68,
             "max": 80
-        }
+        },
+        "max_height_feet": 2,
+        "max_spread_feet": 2
     },
     {
         "name": "avocado_/_persea_americana",
@@ -1248,7 +1272,9 @@
         "temperature": {
             "min": 60,
             "max": 85
-        }
+        },
+        "max_height_feet": 50,
+        "max_spread_feet": 15
     },
     {
         "name": "hemp_/_cannabis_sativa",
@@ -1296,7 +1322,9 @@
         "temperature": {
             "min": 59,
             "max": 75
-        }
+        },
+        "max_height_feet": 12,
+        "max_spread_feet": 5
     },
     {
         "name": "sweet_mint_/_mentha_x_suavis",
@@ -1335,7 +1363,9 @@
         "temperature": {
             "min": 24,
             "max": 75
-        }
+        },
+        "max_height_feet": 2,
+        "max_spread_feet": 3
     },
     {
         "name": "weeping_fig_/_ficus_benjamina",
@@ -1370,7 +1400,9 @@
         "temperature": {
             "min": 59,
             "max": 85
-        }
+        },
+        "max_height_feet": 60,
+        "max_spread_feet": 100
     },
     {
         "name": "blue_point_juniper_/_juniperus_chinensis_'blue_point'",
@@ -1410,6 +1442,8 @@
         "temperature": {
             "min": -40,
             "max": 85
-        }
+        },
+        "max_height_feet": 15,
+        "max_spread_feet": 4
     }
 ]
