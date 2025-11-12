@@ -1,3 +1,4 @@
++let CURRENT_RESULTS = [];
 async function Search() {
   let poisonous = document.querySelector("#poisonous").value;
   if (poisonous === "true") poisonous = true;
@@ -41,6 +42,7 @@ function NormalizeName(str) {
 }
 
 function PopulateResults(plants) {
+  CURRENT_RESULTS = Array.isArray(plants) ? plants : [];
   const plant_list = document.querySelector("#plant_list");
   plant_list.innerHTML = "";
 
@@ -119,3 +121,85 @@ function PopulateResults(plants) {
     plant_list.appendChild(panel);
   }
 }
+// ===============================
+// EXPORT FEATURE – CLIENT-SIDE
+// ===============================
+
+// Flatten nested objects/arrays into dot-path keys for CSV
+function flatten(obj, prefix = "", out = {}) {
+  if (obj === null || obj === undefined) return out;
+  if (Array.isArray(obj)) {
+    out[prefix.slice(0, -1)] = obj.join(", ");
+    return out;
+  }
+  if (typeof obj !== "object") {
+    out[prefix.slice(0, -1)] = obj;
+    return out;
+  }
+  for (const [k, v] of Object.entries(obj)) {
+    flatten(v, `${prefix}${k}.`, out);
+  }
+  return out;
+}
+
+// Convert an array of objects to CSV text
+function toCSV(rows) {
+  if (!rows || rows.length === 0) return "";
+  const flatRows = rows.map(r => flatten(r));
+  const headers = Array.from(
+    flatRows.reduce((set, r) => {
+      Object.keys(r).forEach(k => set.add(k));
+      return set;
+    }, new Set())
+  );
+  const esc = (val) => {
+    if (val === null || val === undefined) return "";
+    const s = String(val);
+    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const lines = [
+    headers.join(","),
+    ...flatRows.map(r => headers.map(h => esc(r[h])).join(","))
+  ];
+  return lines.join("\n");
+}
+
+// Trigger a download
+function downloadFile(filename, mime, text) {
+  const blob = new Blob([text], { type: mime });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function exportJSON() {
+  if (!CURRENT_RESULTS.length) {
+    alert("No results to export.");
+    return;
+  }
+  const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+  const pretty = JSON.stringify(CURRENT_RESULTS, null, 2);
+  downloadFile(`growsmart-results-${stamp}.json`, "application/json", pretty);
+}
+
+function exportCSV() {
+  if (!CURRENT_RESULTS.length) {
+    alert("No results to export.");
+    return;
+  }
+  const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+  // UTF-8 BOM improves Excel compatibility
+  const csv = "\uFEFF" + toCSV(CURRENT_RESULTS);
+  downloadFile(`growsmart-results-${stamp}.csv`, "text/csv;charset=utf-8", csv);
+}
+
+// Wire buttons when DOM is ready
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("exportCsvBtn")?.addEventListener("click", exportCSV);
+  document.getElementById("exportJsonBtn")?.addEventListener("click", exportJSON);
+});
