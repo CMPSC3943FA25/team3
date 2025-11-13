@@ -2,7 +2,7 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [
+        "soils": [
             "sand",
             "humus",
             "soddy",
@@ -21,7 +21,7 @@
         "name": "begonia",
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "red",
             "yellow",
             "green"
@@ -36,7 +36,7 @@
     {
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -63,7 +63,7 @@
         "name": "black_eyed_susan",
         "max_height_feet": 3,
         "max_spread_feet": 3,
-        "color": [
+        "colors": [
             "yellow",
             "green",
             "black"
@@ -78,7 +78,7 @@
     {
         "poisonous": false,
         "difficulty": "medium",
-        "soil": [
+        "soils": [
             "peat",
             "perlite"
         ],
@@ -99,7 +99,7 @@
         "name": "boston_fern",
         "max_height_feet": 3,
         "max_spread_feet": 3,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 168,
@@ -112,7 +112,7 @@
     {
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [
+        "soils": [
             "sand",
             "sod",
             "deciduous_soil"
@@ -136,7 +136,7 @@
         "name": "aloe_vera_/_true_aloe",
         "max_height_feet": 2,
         "max_spread_feet": 3,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 264,
@@ -149,7 +149,7 @@
     {
         "poisonous": false,
         "difficulty": "medium",
-        "soil": [
+        "soils": [
             "sod",
             "deciduous_soil"
         ],
@@ -184,7 +184,7 @@
         "name": "tomato_/_solanum_iycopersicum",
         "max_height_feet": 10,
         "max_spread_feet": 6,
-        "color": [
+        "colors": [
             "red",
             "orange",
             "yellow",
@@ -200,7 +200,7 @@
     {
         "poisonous": false,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -219,7 +219,7 @@
         "name": "basil_/_ocimum_basilicum_/_sweet_basil",
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 72,
@@ -232,7 +232,7 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -255,7 +255,7 @@
         "name": "spearmint_/_mentha_spicata",
         "max_height_feet": 2,
         "max_spread_feet": 3,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 192,
@@ -268,7 +268,7 @@
     {
         "poisonous": false,
         "difficulty": "easy",
-        "soil": [
+        "soils": [
             "sand",
             "sod"
         ],
@@ -299,7 +299,7 @@
         "name": "china_rose_/_rosa_chinensis_/_chinese_rose_/_bengal_rose",
         "max_height_feet": 6,
         "max_spread_feet": 6,
-        "color": [
+        "colors": [
             "red",
             "pink",
             "yellow",
@@ -315,7 +315,7 @@
     {
         "poisonous": false,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -351,7 +351,7 @@
         "name": "cucumber_/_cucumis_sativus",
         "max_height_feet": 10,
         "max_spread_feet": 4,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 120,
@@ -364,7 +364,7 @@
     {
         "poisonous": false,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "dry",
         "seasons": [
@@ -383,7 +383,7 @@
         "name": "bunny_ear_cactus_/_opuntia_microdaisys",
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "green",
             "white"
         ],
@@ -397,7 +397,7 @@
     {
         "poisonous": false,
         "difficulty": "medium",
-        "soil": [
+        "soils": [
             "sand",
             "sod"
         ],
@@ -420,7 +420,7 @@
         "name": "calla_lily_/_zantedeschia_aethiopica",
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "red",
             "pink",
             "orange",
@@ -439,7 +439,7 @@
     {
         "poisonous": false,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "shade",
         "humidity": "high",
         "seasons": [
@@ -467,7 +467,7 @@
         "name": "garden_strawberry_/_fragaria_x_ananassa",
         "max_height_feet": 1,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "red",
             "green"
         ],
@@ -481,7 +481,7 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -504,7 +504,7 @@
         "name": "peach_/_prunus_persica",
         "max_height_feet": 25,
         "max_spread_feet": 20,
-        "color": [
+        "colors": [
             "red",
             "orange",
             "yellow",
@@ -520,7 +520,7 @@
     {
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -560,7 +560,7 @@
         "name": "potato_/_solanum_tuberosum",
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 216,
@@ -573,7 +573,7 @@
     {
         "poisonous": true,
         "difficulty": "hard",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -592,7 +592,7 @@
         "name": "poinsettia_/_euphorbia_pulcherrima",
         "max_height_feet": 10,
         "max_spread_feet": 5,
-        "color": [
+        "colors": [
             "red",
             "green"
         ],
@@ -606,7 +606,7 @@
     {
         "poisonous": true,
         "difficulty": "hard",
-        "soil": [
+        "soils": [
             "sand",
             "sod"
         ],
@@ -628,7 +628,7 @@
         "name": "hibiscus_/_hibiscus_rosa-sinensis",
         "max_height_feet": 10,
         "max_spread_feet": 10,
-        "color": [
+        "colors": [
             "red",
             "pink",
             "orange",
@@ -648,7 +648,7 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "high",
         "seasons": [
@@ -673,7 +673,7 @@
         "name": "water_oak_/_quercus_nigra",
         "max_height_feet": 80,
         "max_spread_feet": 60,
-        "color": [
+        "colors": [
             "brown",
             "white"
         ],
@@ -687,7 +687,7 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -708,7 +708,7 @@
         "name": "lemon_/_citrus_limon",
         "max_height_feet": 20,
         "max_spread_feet": 15,
-        "color": [
+        "colors": [
             "yellow",
             "brown",
             "white"
@@ -723,7 +723,7 @@
     {
         "poisonous": false,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -756,7 +756,7 @@
         "name": "sunflower_._helianthus_annuus_/_common_sunflower_/_wild_sunflower",
         "max_height_feet": 10,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "yellow",
             "green",
             "brown"
@@ -771,7 +771,7 @@
     {
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "shade",
         "humidity": "moderate",
         "seasons": [
@@ -804,7 +804,7 @@
         "name": "mexican_marigold_/_tagetes_erecta",
         "max_height_feet": 3,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "orange",
             "yellow",
             "green"
@@ -819,7 +819,7 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -844,7 +844,7 @@
         "name": "tulip_/_tulipa_gesneriana",
         "max_height_feet": 2,
         "max_spread_feet": 1,
-        "color": [
+        "colors": [
             "red",
             "pink",
             "orange",
@@ -864,7 +864,7 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -885,7 +885,7 @@
         "name": "spotted_calla_lily_/_zantedeschia_albomaculata",
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "red",
             "pink",
             "orange",
@@ -905,7 +905,7 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -924,7 +924,7 @@
         "name": "sweet_potato_/_ipomoea_batatas",
         "max_height_feet": 1,
         "max_spread_feet": 4,
-        "color": [
+        "colors": [
             "yellow",
             "green",
             "violet"
@@ -940,7 +940,7 @@
         "name": "golden_pothos_/_epipremnum_aureum_/_silver_vine",
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [
+        "soils": [
             "sand",
             "sod"
         ],
@@ -961,7 +961,7 @@
         ],
         "max_height_feet": 10,
         "max_spread_feet": 6,
-        "color": [
+        "colors": [
             "yellow",
             "green"
         ],
@@ -976,7 +976,7 @@
         "name": "snake_plant_/_sansevieria_trifasciata",
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [
+        "soils": [
             "sand",
             "sod"
         ],
@@ -997,7 +997,7 @@
         ],
         "max_height_feet": 3,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 264,
@@ -1011,7 +1011,7 @@
         "name": "spider_plant_/_chlorophytum_comosum",
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "shade",
         "humidity": "moderate",
         "seasons": [
@@ -1029,7 +1029,7 @@
         ],
         "max_height_feet": 2,
         "max_spread_feet": 3,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 192,
@@ -1043,7 +1043,7 @@
         "name": "jade_plant_/_crassula_ovata",
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [
+        "soils": [
             "sand",
             "deciduous_soil"
         ],
@@ -1063,7 +1063,7 @@
         ],
         "max_height_feet": 3,
         "max_spread_feet": 3,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 264,
@@ -1077,7 +1077,7 @@
         "name": "flamingo_lily_/_anthurium_andraeanum",
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [
+        "soils": [
             "sand",
             "deciduous_soil"
         ],
@@ -1096,7 +1096,7 @@
         ],
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "red",
             "pink",
             "yellow",
@@ -1114,7 +1114,7 @@
         "name": "rubber_plant_/_ficus_elastica",
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "shade",
         "humidity": "moderate",
         "seasons": [
@@ -1132,7 +1132,7 @@
         ],
         "max_height_feet": 50,
         "max_spread_feet": 30,
-        "color": [
+        "colors": [
             "red",
             "green",
             "black"
@@ -1148,7 +1148,7 @@
         "name": "moth_orchid_/_phalaenopsis_amabilis",
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "high",
         "seasons": [
@@ -1164,7 +1164,7 @@
         ],
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "red",
             "pink",
             "yellow",
@@ -1183,7 +1183,7 @@
         "name": "thanksgiving_cactus_/_schlumbergera_truncata",
         "poisonous": false,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "shade",
         "humidity": "moderate",
         "seasons": [
@@ -1199,7 +1199,7 @@
         ],
         "max_height_feet": 2,
         "max_spread_feet": 2,
-        "color": [
+        "colors": [
             "red",
             "pink",
             "green",
@@ -1216,7 +1216,7 @@
         "name": "avocado_/_persea_americana",
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [
+        "soils": [
             "sand",
             "deciduous_soil"
         ],
@@ -1237,7 +1237,7 @@
         ],
         "max_height_feet": 50,
         "max_spread_feet": 15,
-        "color": [
+        "colors": [
             "green",
             "brown"
         ],
@@ -1252,7 +1252,7 @@
         "name": "hemp_/_cannabis_sativa",
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "shade",
         "humidity": "high",
         "seasons": [
@@ -1285,7 +1285,7 @@
         ],
         "max_height_feet": 12,
         "max_spread_feet": 5,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 168,
@@ -1299,7 +1299,7 @@
         "name": "sweet_mint_/_mentha_x_suavis",
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -1323,7 +1323,7 @@
         ],
         "max_height_feet": 2,
         "max_spread_feet": 3,
-        "color": [
+        "colors": [
             "green"
         ],
         "water_frequency_min_hours": 144,
@@ -1337,7 +1337,7 @@
         "name": "weeping_fig_/_ficus_benjamina",
         "poisonous": true,
         "difficulty": "medium",
-        "soil": [],
+        "soils": [],
         "lighting": "shade",
         "humidity": "high",
         "seasons": [
@@ -1357,7 +1357,7 @@
         ],
         "max_height_feet": 60,
         "max_spread_feet": 100,
-        "color": [
+        "colors": [
             "green",
             "brown"
         ],
@@ -1372,7 +1372,7 @@
         "name": "blue_point_juniper_/_juniperus_chinensis_'blue_point'",
         "poisonous": true,
         "difficulty": "easy",
-        "soil": [],
+        "soils": [],
         "lighting": "full_sun",
         "humidity": "moderate",
         "seasons": [
@@ -1397,7 +1397,7 @@
         ],
         "max_height_feet": 15,
         "max_spread_feet": 4,
-        "color": [
+        "colors": [
             "green",
             "brown"
         ],

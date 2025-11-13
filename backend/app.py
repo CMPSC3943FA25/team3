@@ -58,17 +58,17 @@ def search_plants():
             plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
         
         if req["water_frequency_min_hours"] is not None:
-            plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
+            plant_data = [p for p in plant_data if p.get("water_frequency_max_hours") == req["water_frequency_max_hours"]]
 
-        if req["water_frequency_min_hours"] is not None:
-            plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
+        if req["repot_frequency_min_hours"] is not None:
+            plant_data = [p for p in plant_data if p.get("repot_frequency_min_hours") == req["repot_frequency_min_hours"]]
 
-        if req["water_frequency_min_hours"] is not None:
-            plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
+        if req["repot_frequency_min_hours"] is not None:
+            plant_data = [p for p in plant_data if p.get("repot_frequency_min_hours") == req["repot_frequency_min_hours"]]
 
         # Check if request soil is a subset of a plant's soil
-        if req["soil"] is not None:
-            plant_data = [p for p in plant_data if set(req.get("soil")).issubset(set(p.get("soil")))]
+        if req["soils"] is not None:
+            plant_data = [p for p in plant_data if set(req.get("soils")).issubset(set(p.get("soils")))]
 
         if req["lighting"] is not None:
             plant_data = [p for p in plant_data if p.get("lighting") == req["lighting"]]
@@ -77,7 +77,7 @@ def search_plants():
             plant_data = [p for p in plant_data if p.get("humidity") == req["humidity"]]
 
         if req["colors"] is not None:
-            plant_data = [p for p in plant_data if set(req.get("colors")).issubset(set(p.get("color")))]
+            plant_data = [p for p in plant_data if set(req.get("colors")).issubset(set(p.get("colors")))]
 
         # Check if request seasons is a subset of a plant's seasons
         if req["seasons"] is not None:

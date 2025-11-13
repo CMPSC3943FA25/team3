@@ -29,9 +29,11 @@ async function Search() {
     max_spread: QueryElement("#max_spread"),
     water_frequency_min_hours: null,
     water_frequency_max_hours: null,
+    repot_frequency_min_hours: null,
+    repot_frequency_max_hours: null,
     hardiness: QueryElement(".hardiness"),
     colors: QueryElement(".color"),
-    soil: QueryElement(".soil"),
+    soils: QueryElement(".soil"),
     seasons: QueryElement(".season"),
   };
 
@@ -98,7 +100,7 @@ function PopulateResults(plants) {
     panel.appendChild(water_frequency);
 
     const soils = document.createElement("p");
-    soils.textContent = `Soils: ${plant.soil
+    soils.textContent = `Soils: ${plant.soils
       .map((x) => NormalizeName(x))
       .join(", ")}`;
     panel.appendChild(soils);
@@ -118,7 +120,7 @@ function PopulateResults(plants) {
     panel.appendChild(seasons);
 
     const colors = document.createElement("p");
-    colors.textContent = `Colors: ${plant.color
+    colors.textContent = `Colors: ${plant.colors
       .map((x) => NormalizeName(x))
       .join(", ")}`;
     panel.appendChild(colors);
@@ -131,7 +133,7 @@ function PopulateResults(plants) {
     panel.appendChild(hardiness);
 
     const temperature = document.createElement("p");
-    temperature.textContent = `Temperature: ${plant.min_temperature}-${plant.min_temperature}`;
+    temperature.textContent = `Temperature: ${plant.min_temperature}-${plant.max_temperature}`;
     panel.appendChild(temperature);
 
     const max_height = document.createElement("p");
