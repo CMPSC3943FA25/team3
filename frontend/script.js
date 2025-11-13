@@ -1,27 +1,40 @@
 let CURRENT_RESULTS = [];
-async function Search() {
-  let poisonous = document.querySelector("#poisonous").value;
-  if (poisonous === "true") poisonous = true;
-  else if (poisonous === "false") poisonous = false;
-  else poisonous = "any";
 
+function QueryElement(selector) {
+  if (selector.startsWith("#")) {
+    const value = document.querySelector(selector).value;
+    if (value === "" || value === "any") return null;
+    if (value === "true") return true;
+    if (value === "false") return false;
+    if (!Number.isNaN(Number(value))) return Number(value);
+    return value;
+  } else if (selector.startsWith(".")) {
+    return Array.from(document.querySelectorAll(selector))
+      .filter((x) => x.checked)
+      .map((x) => x.value);
+  } else {
+    alert("Selector not supported");
+  }
+}
+
+async function Search() {
   const search = {
-    poisonous: poisonous,
-    difficulty: document.querySelector("#difficulty").value,
-    lighting: document.querySelector("#lighting").value,
-    humidity: document.querySelector("#humidity").value,
-    temperature: {
-      min: Number(document.querySelector("#min_temp").value),
-      max: Number(document.querySelector("#min_temp").value),
-    },
-    soil: Array.from(document.querySelectorAll(".soil"))
-      .filter((x) => x.checked)
-      .map((x) => x.value),
-    seasons: Array.from(document.querySelectorAll(".season"))
-      .filter((x) => x.checked)
-      .map((x) => x.value),
+    poisonous: QueryElement("#poisonous"),
+    difficulty: QueryElement("#difficulty"),
+    lighting: QueryElement("#lighting"),
+    humidity: QueryElement("#humidity"),
+    min_temperature: QueryElement("#min_temp"),
+    max_temperature: QueryElement("#max_temp"),
+    max_height: QueryElement("#max_height"),
+    max_spread: QueryElement("#max_spread"),
+    water_frequency_min_hours: null,
+    water_frequency_max_hours: null,
+    hardiness: QueryElement(".hardiness"),
+    colors: QueryElement(".color"),
+    soil: QueryElement(".soil"),
+    seasons: QueryElement(".season"),
   };
-  // console.log(search);
+
   const res = await fetch("http://127.0.0.1:5000/api/search", {
     headers: {
       "Content-Type": "application/json",
@@ -47,6 +60,9 @@ function PopulateResults(plants) {
   plant_list.innerHTML = "";
 
   console.log(plants);
+  document.querySelector(
+    "#results_count"
+  ).innerText = `${plants.length} Results`;
 
   for (const plant of plants) {
     const panel = document.createElement("div");
@@ -62,21 +78,21 @@ function PopulateResults(plants) {
 
     const water_frequency = document.createElement("p");
     if (
-      plant.water_every_n_hours.start % 24 === 0 &&
-      plant.water_every_n_hours.end % 24 === 0
+      plant.water_frequency_min_hours % 24 === 0 &&
+      plant.water_frequency_max_hours % 24 === 0
     )
       water_frequency.textContent =
         "Water every " +
-        plant.water_every_n_hours.start / 24 +
+        plant.water_frequency_min_hours / 24 +
         " to " +
-        plant.water_every_n_hours.end / 24 +
+        plant.water_frequency_max_hours / 24 +
         " days";
     else {
       water_frequency.textContent =
         "Water every " +
-        plant.water_every_n_hours.start +
+        plant.water_frequency_min_hours +
         " to " +
-        plant.water_every_n_hours.end +
+        plant.water_frequency_max_hours +
         " hours";
     }
     panel.appendChild(water_frequency);
@@ -101,6 +117,12 @@ function PopulateResults(plants) {
       .join(", ")}`;
     panel.appendChild(seasons);
 
+    const colors = document.createElement("p");
+    colors.textContent = `Colors: ${plant.color
+      .map((x) => NormalizeName(x))
+      .join(", ")}`;
+    panel.appendChild(colors);
+
     // TODO: If it is continious such as 1a, 1b, 2a, 2b, 3a, make it disply 1a-3a
     const hardiness = document.createElement("p");
     hardiness.textContent = `Hardiness Zones: ${plant.hardiness
@@ -109,8 +131,16 @@ function PopulateResults(plants) {
     panel.appendChild(hardiness);
 
     const temperature = document.createElement("p");
-    temperature.textContent = `Temperature: ${plant.temperature.min}-${plant.temperature.max}`;
+    temperature.textContent = `Temperature: ${plant.min_temperature}-${plant.min_temperature}`;
     panel.appendChild(temperature);
+
+    const max_height = document.createElement("p");
+    max_height.textContent = `Max Height: ${plant.max_height_feet} feet`;
+    panel.appendChild(max_height);
+
+    const max_spread = document.createElement("p");
+    max_spread.textContent = `Max Spread: ${plant.max_spread_feet} feet`;
+    panel.appendChild(max_spread);
 
     const poisonous = document.createElement("p");
     poisonous.textContent = plant.poisonous
@@ -145,10 +175,10 @@ function flatten(obj, prefix = "", out = {}) {
 // Convert an array of objects to CSV text
 function toCSV(rows) {
   if (!rows || rows.length === 0) return "";
-  const flatRows = rows.map(r => flatten(r));
+  const flatRows = rows.map((r) => flatten(r));
   const headers = Array.from(
     flatRows.reduce((set, r) => {
-      Object.keys(r).forEach(k => set.add(k));
+      Object.keys(r).forEach((k) => set.add(k));
       return set;
     }, new Set())
   );
@@ -159,7 +189,7 @@ function toCSV(rows) {
   };
   const lines = [
     headers.join(","),
-    ...flatRows.map(r => headers.map(h => esc(r[h])).join(","))
+    ...flatRows.map((r) => headers.map((h) => esc(r[h])).join(",")),
   ];
   return lines.join("\n");
 }
@@ -201,5 +231,7 @@ function exportCSV() {
 // Wire buttons when DOM is ready
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("exportCsvBtn")?.addEventListener("click", exportCSV);
-  document.getElementById("exportJsonBtn")?.addEventListener("click", exportJSON);
+  document
+    .getElementById("exportJsonBtn")
+    ?.addEventListener("click", exportJSON);
 });

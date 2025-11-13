@@ -48,101 +48,56 @@ def search_plants():
             return '[]',200
 
         # Now we start filtering based on request params
-        if "poisonous" in req and req["poisonous"] != "any":
+        if req["poisonous"] is not None:
             plant_data = [p for p in plant_data if p.get("poisonous") == req["poisonous"]]
-        
-        if len(plant_data) == 0:
-            print("No plant data after Poisonous")
-            return '[]',200
 
-        if "difficulty" in req and req["difficulty"] != "any":
+        if req["difficulty"] is not None:
             plant_data = [p for p in plant_data if p.get("difficulty") == req["difficulty"]]
 
-        if len(plant_data) == 0:
-            print("No plant data after Difficulty")
-            return '[]',200
-
-        if "water_every_n_hours" in req:
-            water_frequency = req.get("water_frequency")
-            plant_data = [
-                p for p in plant_data if (
-                    # If the user wants to water plants once per week, we need to filter for plants between the earliest and latest
-                    (water_frequency >= p.get("water_every_n_hours").get("start"))
-                    and
-                    (water_frequency <= p.get("water_every_n_hours").get("end"))
-                )
-            ]
-
-        if len(plant_data) == 0:
-            print("No plant data after Water Frequency")
-            return '[]',200
+        if req["water_frequency_min_hours"] is not None:
+            plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
         
-        if "repot_frequency" in req:
-            report_frequency = req.get("repot_frequency")
-            plant_data = [
-                p for p in plant_data if (
-                    (repot_frequency >= p.get("repot_every_n_months").get("start"))
-                    and
-                    (repot_frequency <= p.get("repot_every_n_months").get("end"))
-                )
-            ]
+        if req["water_frequency_min_hours"] is not None:
+            plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
 
-        if len(plant_data) == 0:
-            print("No plant data after Repot Frequency")
-            return '[]',200
+        if req["water_frequency_min_hours"] is not None:
+            plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
+
+        if req["water_frequency_min_hours"] is not None:
+            plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
 
         # Check if request soil is a subset of a plant's soil
-        if "soil" in req:
+        if req["soil"] is not None:
             plant_data = [p for p in plant_data if set(req.get("soil")).issubset(set(p.get("soil")))]
 
-        if len(plant_data) == 0:
-            print("No plant data after Soil")
-            return '[]',200
-
-        if "lighting" in req and req["lighting"] != "any":
+        if req["lighting"] is not None:
             plant_data = [p for p in plant_data if p.get("lighting") == req["lighting"]]
 
-        if len(plant_data) == 0:
-            print("No plant data after Lighting")
-            return '[]',200
-
-        if "humidity" in req and req["humidity"] != "any":
+        if req["humidity"] is not None:
             plant_data = [p for p in plant_data if p.get("humidity") == req["humidity"]]
 
-        if len(plant_data) == 0:
-            print("No plant data after Humidity")
-            return '[]',200
+        if req["colors"] is not None:
+            plant_data = [p for p in plant_data if set(req.get("colors")).issubset(set(p.get("color")))]
 
         # Check if request seasons is a subset of a plant's seasons
-        print(set(req.get("seasons")))
-        if "seasons" in req:
+        if req["seasons"] is not None:
             plant_data = [p for p in plant_data if set(req.get("seasons")).issubset(set(p.get("seasons")))]
 
-        if len(plant_data) == 0:
-            print("No plant data after Seasons")
-            return '[]',200
-
         # Check if request hardiness is a subset of a plant's hardiness
-        if "hardiness" in req:
+        if req["hardiness"] is not None:
             plant_data = [p for p in plant_data if set(req.get("hardiness")).issubset(set(p.get("hardiness")))]
 
-        if len(plant_data) == 0:
-            print("No plant data after Hardiness")
-            return '[]',200
+        if req["min_temperature"] is not None:
+            plant_data = [p for p in plant_data if req.get("min_temperature") >= p.get("min_temperature")]
 
-        if "min_temp" in req:
-            plant_data = [p for p in plant_data if req.get("min_temp") >= p.get("temperature").get("min")]
-        
-        if len(plant_data) == 0:
-            print("No plant data after Min Temp")
-            return '[]',200
+        if req["max_temperature"] is not None:
+            plant_data = [p for p in plant_data if req.get("max_temperature") <= p.get("max_temperature")]
 
-        if "max_temp" in req:
-            plant_data = [p for p in plant_data if req.get("max_temp") <= p.get("temperature").get("max")]
-            
-        if len(plant_data) == 0:
-            print("No plant data after Max Temp")
-            return '[]',200
+        if req["max_height"] is not None:
+            plant_data = [p for p in plant_data if req.get("max_height") >= p.get("max_height_feet")]
+
+        if req["max_spread"] is not None:
+            plant_data = [p for p in plant_data if req.get("max_spread") >= p.get("max_spread_feet")]
 
         # Return filtered (currently just returns request for testing)
         return json.dumps(plant_data, indent=4)

@@ -2,14 +2,6 @@
     {
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 24,
-            "end": 240
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "humus",
@@ -26,10 +18,6 @@
         "hardiness": [
             "10b"
         ],
-        "temperature": {
-            "min": 64,
-            "max": 77
-        },
         "name": "begonia",
         "max_height_feet": 2,
         "max_spread_feet": 2,
@@ -37,19 +25,17 @@
             "red",
             "yellow",
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 24,
+        "water_frequency_max_hours": 240,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 64,
+        "max_temperature": 77
     },
     {
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 72,
-            "end": 336
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -74,10 +60,6 @@
             "9b",
             "10b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 69
-        },
         "name": "black_eyed_susan",
         "max_height_feet": 3,
         "max_spread_feet": 3,
@@ -85,19 +67,17 @@
             "yellow",
             "green",
             "black"
-        ]
+        ],
+        "water_frequency_min_hours": 72,
+        "water_frequency_max_hours": 336,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 69
     },
     {
         "poisonous": false,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 168,
-            "end": 336
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "peat",
             "perlite"
@@ -116,28 +96,22 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 68
-        },
         "name": "boston_fern",
         "max_height_feet": 3,
         "max_spread_feet": 3,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 168,
+        "water_frequency_max_hours": 336,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 68
     },
     {
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 576
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "sod",
@@ -159,28 +133,22 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 44,
-            "max": 80
-        },
         "name": "aloe_vera_/_true_aloe",
         "max_height_feet": 2,
         "max_spread_feet": 3,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 264,
+        "water_frequency_max_hours": 576,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 44,
+        "max_temperature": 80
     },
     {
         "poisonous": false,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 168,
-            "end": 168
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sod",
             "deciduous_soil"
@@ -213,10 +181,6 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 82
-        },
         "name": "tomato_/_solanum_iycopersicum",
         "max_height_feet": 10,
         "max_spread_feet": 6,
@@ -225,19 +189,17 @@
             "orange",
             "yellow",
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 168,
+        "water_frequency_max_hours": 168,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 82
     },
     {
         "poisonous": false,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 72,
-            "end": 168
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -254,28 +216,22 @@
             "12a",
             "12b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 68
-        },
         "name": "basil_/_ocimum_basilicum_/_sweet_basil",
         "max_height_feet": 2,
         "max_spread_feet": 2,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 72,
+        "water_frequency_max_hours": 168,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 68
     },
     {
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 192,
-            "end": 264
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -296,28 +252,22 @@
             "9a",
             "9b"
         ],
-        "temperature": {
-            "min": 57,
-            "max": 75
-        },
         "name": "spearmint_/_mentha_spicata",
         "max_height_feet": 2,
         "max_spread_feet": 3,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 192,
+        "water_frequency_max_hours": 264,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 57,
+        "max_temperature": 75
     },
     {
         "poisonous": false,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 144,
-            "end": 192
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "sod"
@@ -346,10 +296,6 @@
             "10a",
             "10b"
         ],
-        "temperature": {
-            "min": 41,
-            "max": 80
-        },
         "name": "china_rose_/_rosa_chinensis_/_chinese_rose_/_bengal_rose",
         "max_height_feet": 6,
         "max_spread_feet": 6,
@@ -358,19 +304,17 @@
             "pink",
             "yellow",
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 144,
+        "water_frequency_max_hours": 192,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 41,
+        "max_temperature": 80
     },
     {
         "poisonous": false,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 120,
-            "end": 168
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -404,28 +348,22 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 60,
-            "max": 80
-        },
         "name": "cucumber_/_cucumis_sativus",
         "max_height_feet": 10,
         "max_spread_feet": 4,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 120,
+        "water_frequency_max_hours": 168,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 60,
+        "max_temperature": 80
     },
     {
         "poisonous": false,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 384,
-            "end": 432
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "dry",
@@ -442,29 +380,23 @@
             "10a",
             "10b"
         ],
-        "temperature": {
-            "min": 44,
-            "max": 86
-        },
         "name": "bunny_ear_cactus_/_opuntia_microdaisys",
         "max_height_feet": 2,
         "max_spread_feet": 2,
         "color": [
             "green",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 384,
+        "water_frequency_max_hours": 432,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 44,
+        "max_temperature": 86
     },
     {
         "poisonous": false,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 168,
-            "end": 480
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "sod"
@@ -485,10 +417,6 @@
             "10a",
             "10b"
         ],
-        "temperature": {
-            "min": 50,
-            "max": 77
-        },
         "name": "calla_lily_/_zantedeschia_aethiopica",
         "max_height_feet": 2,
         "max_spread_feet": 2,
@@ -500,19 +428,17 @@
             "green",
             "black",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 168,
+        "water_frequency_max_hours": 480,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 50,
+        "max_temperature": 77
     },
     {
         "poisonous": false,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 96,
-            "end": 240
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "shade",
         "humidity": "high",
@@ -538,29 +464,23 @@
             "9a",
             "9b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 68
-        },
         "name": "garden_strawberry_/_fragaria_x_ananassa",
         "max_height_feet": 1,
         "max_spread_feet": 2,
         "color": [
             "red",
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 96,
+        "water_frequency_max_hours": 240,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 68
     },
     {
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 216,
-            "end": 336
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -581,10 +501,6 @@
             "9a",
             "9b"
         ],
-        "temperature": {
-            "min": 44,
-            "max": 64
-        },
         "name": "peach_/_prunus_persica",
         "max_height_feet": 25,
         "max_spread_feet": 20,
@@ -593,19 +509,17 @@
             "orange",
             "yellow",
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 216,
+        "water_frequency_max_hours": 336,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 44,
+        "max_temperature": 64
     },
     {
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 216,
-            "end": 264
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -643,28 +557,22 @@
             "13a",
             "13b"
         ],
-        "temperature": {
-            "min": 44,
-            "max": 70
-        },
         "name": "potato_/_solanum_tuberosum",
         "max_height_feet": 2,
         "max_spread_feet": 2,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 216,
+        "water_frequency_max_hours": 264,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 44,
+        "max_temperature": 70
     },
     {
         "poisonous": true,
         "difficulty": "hard",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 288
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -681,29 +589,23 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 75
-        },
         "name": "poinsettia_/_euphorbia_pulcherrima",
         "max_height_feet": 10,
         "max_spread_feet": 5,
         "color": [
             "red",
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 264,
+        "water_frequency_max_hours": 288,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 75
     },
     {
         "poisonous": true,
         "difficulty": "hard",
-        "water_every_n_hours": {
-            "start": 96,
-            "end": 144
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "sod"
@@ -723,10 +625,6 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 55,
-            "max": 72
-        },
         "name": "hibiscus_/_hibiscus_rosa-sinensis",
         "max_height_feet": 10,
         "max_spread_feet": 10,
@@ -739,19 +637,17 @@
             "blue",
             "violet",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 96,
+        "water_frequency_max_hours": 144,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 55,
+        "max_temperature": 72
     },
     {
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 168,
-            "end": 240
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "high",
@@ -774,29 +670,23 @@
             "9a",
             "9b"
         ],
-        "temperature": {
-            "min": 50,
-            "max": 68
-        },
         "name": "water_oak_/_quercus_nigra",
         "max_height_feet": 80,
         "max_spread_feet": 60,
         "color": [
             "brown",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 168,
+        "water_frequency_max_hours": 240,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 50,
+        "max_temperature": 68
     },
     {
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 144,
-            "end": 240
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -815,10 +705,6 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 68
-        },
         "name": "lemon_/_citrus_limon",
         "max_height_feet": 20,
         "max_spread_feet": 15,
@@ -826,19 +712,17 @@
             "yellow",
             "brown",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 144,
+        "water_frequency_max_hours": 240,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 68
     },
     {
         "poisonous": false,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 384,
-            "end": 432
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -869,10 +753,6 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 50,
-            "max": 66
-        },
         "name": "sunflower_._helianthus_annuus_/_common_sunflower_/_wild_sunflower",
         "max_height_feet": 10,
         "max_spread_feet": 2,
@@ -880,19 +760,17 @@
             "yellow",
             "green",
             "brown"
-        ]
+        ],
+        "water_frequency_min_hours": 384,
+        "water_frequency_max_hours": 432,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 50,
+        "max_temperature": 66
     },
     {
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 216,
-            "end": 264
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "shade",
         "humidity": "moderate",
@@ -923,10 +801,6 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 50,
-            "max": 59
-        },
         "name": "mexican_marigold_/_tagetes_erecta",
         "max_height_feet": 3,
         "max_spread_feet": 2,
@@ -934,19 +808,17 @@
             "orange",
             "yellow",
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 216,
+        "water_frequency_max_hours": 264,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 50,
+        "max_temperature": 59
     },
     {
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 408,
-            "end": 456
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -969,10 +841,6 @@
             "8a",
             "8b"
         ],
-        "temperature": {
-            "min": 50,
-            "max": 68
-        },
         "name": "tulip_/_tulipa_gesneriana",
         "max_height_feet": 2,
         "max_spread_feet": 1,
@@ -985,19 +853,17 @@
             "violet",
             "black",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 408,
+        "water_frequency_max_hours": 456,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 50,
+        "max_temperature": 68
     },
     {
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 216,
-            "end": 264
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -1016,10 +882,6 @@
             "10a",
             "10b"
         ],
-        "temperature": {
-            "min": 32,
-            "max": 68
-        },
         "name": "spotted_calla_lily_/_zantedeschia_albomaculata",
         "max_height_feet": 2,
         "max_spread_feet": 2,
@@ -1032,19 +894,17 @@
             "violet",
             "black",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 216,
+        "water_frequency_max_hours": 264,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 32,
+        "max_temperature": 68
     },
     {
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 168,
-            "end": 216
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -1061,10 +921,6 @@
             "12a",
             "12b"
         ],
-        "temperature": {
-            "min": 60,
-            "max": 69
-        },
         "name": "sweet_potato_/_ipomoea_batatas",
         "max_height_feet": 1,
         "max_spread_feet": 4,
@@ -1072,20 +928,18 @@
             "yellow",
             "green",
             "violet"
-        ]
+        ],
+        "water_frequency_min_hours": 168,
+        "water_frequency_max_hours": 216,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 60,
+        "max_temperature": 69
     },
     {
         "name": "golden_pothos_/_epipremnum_aureum_/_silver_vine",
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 168,
-            "end": 216
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "sod"
@@ -1105,29 +959,23 @@
             "12a",
             "12b"
         ],
-        "temperature": {
-            "min": 60,
-            "max": 90
-        },
         "max_height_feet": 10,
         "max_spread_feet": 6,
         "color": [
             "yellow",
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 168,
+        "water_frequency_max_hours": 216,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 60,
+        "max_temperature": 90
     },
     {
         "name": "snake_plant_/_sansevieria_trifasciata",
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 312
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "sod"
@@ -1147,28 +995,22 @@
             "12a",
             "12b"
         ],
-        "temperature": {
-            "min": 60,
-            "max": 83
-        },
         "max_height_feet": 3,
         "max_spread_feet": 2,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 264,
+        "water_frequency_max_hours": 312,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 60,
+        "max_temperature": 83
     },
     {
         "name": "spider_plant_/_chlorophytum_comosum",
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 192,
-            "end": 240
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "shade",
         "humidity": "moderate",
@@ -1185,28 +1027,22 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 50,
-            "max": 80
-        },
         "max_height_feet": 2,
         "max_spread_feet": 3,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 192,
+        "water_frequency_max_hours": 240,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 50,
+        "max_temperature": 80
     },
     {
         "name": "jade_plant_/_crassula_ovata",
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 312
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "deciduous_soil"
@@ -1225,28 +1061,22 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 50,
-            "max": 83
-        },
         "max_height_feet": 3,
         "max_spread_feet": 3,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 264,
+        "water_frequency_max_hours": 312,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 50,
+        "max_temperature": 83
     },
     {
         "name": "flamingo_lily_/_anthurium_andraeanum",
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 312
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "deciduous_soil"
@@ -1264,10 +1094,6 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 64,
-            "max": 85
-        },
         "max_height_feet": 2,
         "max_spread_feet": 2,
         "color": [
@@ -1276,20 +1102,18 @@
             "yellow",
             "green",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 264,
+        "water_frequency_max_hours": 312,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 64,
+        "max_temperature": 85
     },
     {
         "name": "rubber_plant_/_ficus_elastica",
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 312
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "shade",
         "humidity": "moderate",
@@ -1306,30 +1130,24 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 75
-        },
         "max_height_feet": 50,
         "max_spread_feet": 30,
         "color": [
             "red",
             "green",
             "black"
-        ]
+        ],
+        "water_frequency_min_hours": 264,
+        "water_frequency_max_hours": 312,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 75
     },
     {
         "name": "moth_orchid_/_phalaenopsis_amabilis",
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 216,
-            "end": 264
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "high",
@@ -1344,10 +1162,6 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 64,
-            "max": 85
-        },
         "max_height_feet": 2,
         "max_spread_feet": 2,
         "color": [
@@ -1357,20 +1171,18 @@
             "green",
             "violet",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 216,
+        "water_frequency_max_hours": 264,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 64,
+        "max_temperature": 85
     },
     {
         "name": "thanksgiving_cactus_/_schlumbergera_truncata",
         "poisonous": false,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 312
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "shade",
         "humidity": "moderate",
@@ -1385,10 +1197,6 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 68,
-            "max": 80
-        },
         "max_height_feet": 2,
         "max_spread_feet": 2,
         "color": [
@@ -1396,20 +1204,18 @@
             "pink",
             "green",
             "white"
-        ]
+        ],
+        "water_frequency_min_hours": 264,
+        "water_frequency_max_hours": 312,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 68,
+        "max_temperature": 80
     },
     {
         "name": "avocado_/_persea_americana",
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 144,
-            "end": 168
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [
             "sand",
             "deciduous_soil"
@@ -1429,29 +1235,23 @@
             "12a",
             "12b"
         ],
-        "temperature": {
-            "min": 60,
-            "max": 85
-        },
         "max_height_feet": 50,
         "max_spread_feet": 15,
         "color": [
             "green",
             "brown"
-        ]
+        ],
+        "water_frequency_min_hours": 144,
+        "water_frequency_max_hours": 168,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 60,
+        "max_temperature": 85
     },
     {
         "name": "hemp_/_cannabis_sativa",
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 168,
-            "end": 216
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "shade",
         "humidity": "high",
@@ -1483,28 +1283,22 @@
             "11a",
             "11b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 75
-        },
         "max_height_feet": 12,
         "max_spread_feet": 5,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 168,
+        "water_frequency_max_hours": 216,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 75
     },
     {
         "name": "sweet_mint_/_mentha_x_suavis",
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 144,
-            "end": 192
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -1527,28 +1321,22 @@
             "9a",
             "9b"
         ],
-        "temperature": {
-            "min": 24,
-            "max": 75
-        },
         "max_height_feet": 2,
         "max_spread_feet": 3,
         "color": [
             "green"
-        ]
+        ],
+        "water_frequency_min_hours": 144,
+        "water_frequency_max_hours": 192,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 24,
+        "max_temperature": 75
     },
     {
         "name": "weeping_fig_/_ficus_benjamina",
         "poisonous": true,
         "difficulty": "medium",
-        "water_every_n_hours": {
-            "start": 192,
-            "end": 240
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "shade",
         "humidity": "high",
@@ -1567,29 +1355,23 @@
             "12a",
             "12b"
         ],
-        "temperature": {
-            "min": 59,
-            "max": 85
-        },
         "max_height_feet": 60,
         "max_spread_feet": 100,
         "color": [
             "green",
             "brown"
-        ]
+        ],
+        "water_frequency_min_hours": 192,
+        "water_frequency_max_hours": 240,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": 59,
+        "max_temperature": 85
     },
     {
         "name": "blue_point_juniper_/_juniperus_chinensis_'blue_point'",
         "poisonous": true,
         "difficulty": "easy",
-        "water_every_n_hours": {
-            "start": 264,
-            "end": 312
-        },
-        "repot_every_n_months": {
-            "start": 12,
-            "end": 12
-        },
         "soil": [],
         "lighting": "full_sun",
         "humidity": "moderate",
@@ -1613,15 +1395,17 @@
             "9a",
             "9b"
         ],
-        "temperature": {
-            "min": -40,
-            "max": 85
-        },
         "max_height_feet": 15,
         "max_spread_feet": 4,
         "color": [
             "green",
             "brown"
-        ]
+        ],
+        "water_frequency_min_hours": 264,
+        "water_frequency_max_hours": 312,
+        "repot_frequency_min_months": 12,
+        "repot_frequency_max_months": 12,
+        "min_temperature": -40,
+        "max_temperature": 85
     }
 ]

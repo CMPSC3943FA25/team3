@@ -48,6 +48,96 @@
       <label>Max Temperature (°F)</label>
       <input type="number" id="max_temp" />
 
+      <label>Max Height</label>
+      <input type="number" id="max_height" />
+
+      <label>Max Spread</label>
+      <input type="number" id="max_spread" />
+
+      <label>Colors</label>
+      <div class="checkbox-group">
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="red"
+          />Red</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="yellow"
+          />Yellow</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="green"
+          />Green</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="black"
+          />Black</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="orange"
+          />Orange</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="pink"
+          />Pink</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="white"
+          />White</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="blue"
+          />Blue</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="violet"
+          />Violet</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            class="color"
+            name="color"
+            value="brown"
+          />Brown</label
+        >
+      </div>
+
       <label>Soil Types</label>
       <div class="checkbox-group">
         <label
@@ -148,13 +238,13 @@
     </form>
 
     <div id="results">
-      <h2>Results</h2>
-            <!-- Export buttons -->
-    <div style="display:flex; gap:8px; margin-bottom:12px">
-      <button type="button" id="exportCsvBtn">Export CSV</button>
-      <button type="button" id="exportJsonBtn">Export JSON</button>
-    </div>
-      
+      <h2 id="results_count">Results</h2>
+      <!-- Export buttons -->
+      <div style="display: flex; gap: 8px; margin-bottom: 12px">
+        <button type="button" id="exportCsvBtn">Export CSV</button>
+        <button type="button" id="exportJsonBtn">Export JSON</button>
+      </div>
+
       <div id="plant_list">No results yet.</div>
     </div>
   </body>
