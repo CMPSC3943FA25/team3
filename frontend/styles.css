@@ -1,64 +1,324 @@
-body {
-  font-family: sans-serif;
-  margin: 40px;
-  background-color: #f0fff0;
-}
-form,
-#results {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
-input,
-select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #2e7d32;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer; /* For some reason this is the "clickable" cursor */
-}
-.checkbox-group {
-  display: flex;
-  gap: 10px;
-}
-h2 {
-  margin-top: 0;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Plant Results */
+/* PAGE BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+
+  /* brighter, greener overlay */
+  background-image:
+    radial-gradient(circle at top left, rgba(34, 197, 94, 0.22), rgba(0, 0, 0, 0.7)),
+    url("assets/plant-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #e5f4ea;
+}
+
+
+/* LAYOUT WRAPPER */
+.gs-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.gs-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0 1rem 2rem;
+}
+
+/* HEADER */
+.gs-header {
+  padding: 1.25rem 2rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.gs-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #4ade80;
+}
+
+.gs-logo-icon {
+  font-size: 1.9rem;
+}
+
+.gs-subtitle {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* CARDS */
+.gs-card {
+  width: 100%;
+  max-width: 1100px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(10, 60, 52, 0.78),
+    rgba(10, 38, 55, 0.72)
+  );
+  border-radius: 20px;
+  padding: 1.75rem 1.75rem 1.5rem;
+
+  box-shadow:
+    0 22px 45px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(52, 211, 153, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+
+.gs-results {
+  margin-top: 0.25rem;
+}
+
+/* FORM LAYOUT */
+.gs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.gs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.75rem;
+}
+
+.gs-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.gs-field-full {
+  grid-column: 1 / -1;
+}
+
+.gs-field label,
+.gs-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #e5f4ea;
+}
+
+.gs-input,
+input[type="text"],
+input[type="number"],
+select {
+  background-color: rgba(3, 20, 26, 0.9);  
+  color: #e5f4ea;
+  border: 1px solid rgba(55, 65, 81, 0.7);
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease,
+    transform 0.05s ease, background-color 0.15s ease;
+}
+
+
+/* placeholder */
+.gs-input::placeholder {
+  color: #6b7280;
+}
+
+/* focus state */
+.gs-input:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.45);
+  background-color: rgba(4, 26, 38, 0.95);
+  transform: translateY(-1px);
+}
+
+
+/* custom arrow on selects */
+select.gs-input,
+select {
+  background-image: linear-gradient(45deg, transparent 50%, #22c55e 50%),
+    linear-gradient(135deg, #22c55e 50%, transparent 50%);
+  background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  appearance: none;
+}
+
+/* CHECKBOX GROUP AS CHIPS */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.checkbox-group label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(99, 115, 139, 0.9);
+  font-size: 0.85rem;
+  color: #e5f4ea;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgba(3, 20, 26, 0.9);  
+  transition: background-color 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease, transform 0.05s ease;
+  font-weight: normal;
+}
+
+
+.checkbox-group input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* highlight when checked */
+.checkbox-group label:has(input[type="checkbox"]:checked) {
+  background-color: rgba(22, 163, 74, 0.2);
+  border-color: #22c55e;
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.5);
+  transform: translateY(-1px);
+  font-weight: 500;
+}
+
+/* ACTION BUTTONS */
+.gs-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.gs-btn-primary,
+.gs-btn-ghost {
+  border-radius: 999px;
+  border: none;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.12s ease,
+    background-color 0.1s ease, color 0.1s ease;
+}
+
+/* primary button (Search) */
+.gs-btn-primary {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #020617;
+  box-shadow:
+    0 14px 30px rgba(22, 163, 74, 0.5),
+    0 0 0 1px rgba(22, 163, 74, 0.25);
+}
+
+.gs-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 18px 36px rgba(21, 128, 61, 0.6),
+    0 0 0 1px rgba(21, 128, 61, 0.3);
+}
+
+.gs-btn-primary:active {
+  transform: translateY(0);
+  box-shadow:
+    0 10px 22px rgba(21, 128, 61, 0.55),
+    0 0 0 1px rgba(21, 128, 61, 0.35);
+}
+
+/* ghost button (Reset, Export) */
+.gs-btn-ghost {
+  background-color: transparent;
+  color: #e5f4ea;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+}
+
+.gs-btn-ghost:hover {
+  background-color: rgba(15, 23, 42, 0.9);
+}
+
+/* RESULTS HEADER (title + export buttons) */
+.gs-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* HEADINGS */
+#results h2,
+.gs-results h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* PLANT RESULTS LAYOUT (merged from friend) */
 #plant_list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
+/* individual plant card */
 .plant {
-  background-color: #f9f9f9;
-  width: 30%;
-  border-radius: 5px;
-  padding: 10px;
+  flex: 1 1 260px;
+  background-color: rgba(15, 23, 42, 0.9);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  color: #e5f4ea;
 }
 
-/* Cascading pain */
-.checkbox-group label {
-  font-weight: normal;
-}
-.checkbox-group input {
-  width: auto;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .gs-header {
+    padding-inline: 1.25rem;
+  }
+
+  .gs-card {
+    padding: 1.25rem 1.1rem 1.25rem;
+  }
+
+  .gs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gs-actions {
+    justify-content: stretch;
+  }
+
+  .gs-btn-primary,
+  .gs-btn-ghost {
+    flex: 1;
+    text-align: center;
+  }
+
+  .gs-results-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

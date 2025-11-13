@@ -8,244 +8,322 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1 style="color: #2e7d32">🌿 GrowSmart</h1>
+    <div class="gs-page">
+      <!-- HEADER -->
+      <header class="gs-header">
+        <div class="gs-logo">
+          <span class="gs-logo-icon">🌿</span>
+          <span class="gs-logo-text">GrowSmart</span>
+        </div>
+        <p class="gs-subtitle">Find plants that actually like your space.</p>
+      </header>
 
-    <form id="search_form">
-      <label>Poisonous</label>
-      <select id="poisonous">
-        <option value="any">Any</option>
-        <option value="true">Yes</option>
-        <option value="false">No</option>
-      </select>
+      <!-- MAIN CONTENT -->
+      <main class="gs-main">
+        <!-- SEARCH CARD -->
+        <section class="gs-card">
+          <form id="search_form" class="gs-form">
+            <div class="gs-grid">
+              <!-- Poisonous -->
+              <div class="gs-field">
+                <label for="poisonous">Poisonous</label>
+                <select id="poisonous" class="gs-input">
+                  <option value="any">Any</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
 
-      <label>Difficulty</label>
-      <select id="difficulty">
-        <option value="any">Any</option>
-        <option value="easy">Easy</option>
-        <option value="medium">Medium</option>
-        <option value="hard">Hard</option>
-      </select>
+              <!-- Difficulty -->
+              <div class="gs-field">
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty" class="gs-input">
+                  <option value="any">Any</option>
+                  <option value="easy">Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+                </select>
+              </div>
 
-      <label>Lighting</label>
-      <select id="lighting">
-        <option value="any">Any</option>
-        <option value="full_sun">Full Sun</option>
-        <option value="part_sun">Part Sun</option>
-        <option value="shade">Shade</option>
-      </select>
+              <!-- Lighting -->
+              <div class="gs-field">
+                <label for="lighting">Lighting</label>
+                <select id="lighting" class="gs-input">
+                  <option value="any">Any</option>
+                  <option value="full_sun">Full Sun</option>
+                  <option value="part_sun">Part Sun</option>
+                  <option value="shade">Shade</option>
+                </select>
+              </div>
 
-      <label>Humidity</label>
-      <select id="humidity">
-        <option value="any">Any</option>
-        <option value="high">High</option>
-        <option value="moderate">Moderate</option>
-        <option value="dry">Dry</option>
-      </select>
+              <!-- Humidity -->
+              <div class="gs-field">
+                <label for="humidity">Humidity</label>
+                <select id="humidity" class="gs-input">
+                  <option value="any">Any</option>
+                  <option value="high">High</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="dry">Dry</option>
+                </select>
+              </div>
 
-      <label>Min Temperature (°F)</label>
-      <input type="number" id="min_temp" />
+              <!-- Min Temp -->
+              <div class="gs-field">
+                <label for="min_temp">Min Temperature (°F)</label>
+                <input type="number" id="min_temp" class="gs-input" />
+              </div>
 
-      <label>Max Temperature (°F)</label>
-      <input type="number" id="max_temp" />
+              <!-- Max Temp -->
+              <div class="gs-field">
+                <label for="max_temp">Max Temperature (°F)</label>
+                <input type="number" id="max_temp" class="gs-input" />
+              </div>
 
-      <label>Max Height</label>
-      <input type="number" id="max_height" />
+              <!-- Max Height -->
+              <div class="gs-field">
+                <label for="max_height">Max Height</label>
+                <input type="number" id="max_height" class="gs-input" />
+              </div>
 
-      <label>Max Spread</label>
-      <input type="number" id="max_spread" />
+              <!-- Max Spread -->
+              <div class="gs-field">
+                <label for="max_spread">Max Spread</label>
+                <input type="number" id="max_spread" class="gs-input" />
+              </div>
 
-      <label>Colors</label>
-      <div class="checkbox-group">
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="red"
-          />Red</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="yellow"
-          />Yellow</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="green"
-          />Green</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="black"
-          />Black</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="orange"
-          />Orange</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="pink"
-          />Pink</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="white"
-          />White</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="blue"
-          />Blue</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="violet"
-          />Violet</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="color"
-            name="color"
-            value="brown"
-          />Brown</label
-        >
-      </div>
+              <!-- Colors -->
+              <div class="gs-field gs-field-full">
+                <span class="gs-label">Colors</span>
+                <div class="checkbox-group">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="red"
+                    />Red
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="yellow"
+                    />Yellow
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="green"
+                    />Green
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="black"
+                    />Black
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="orange"
+                    />Orange
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="pink"
+                    />Pink
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="white"
+                    />White
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="blue"
+                    />Blue
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="violet"
+                    />Violet
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="color"
+                      name="color"
+                      value="brown"
+                    />Brown
+                  </label>
+                </div>
+              </div>
 
-      <label>Soil Types</label>
-      <div class="checkbox-group">
-        <label
-          ><input
-            type="checkbox"
-            class="soil"
-            name="soil"
-            value="sand"
-          />Sand</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="soil"
-            name="soil"
-            value="sod"
-          />Sod</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="soil"
-            name="soil"
-            value="deciduous_soil"
-          />Deciduous Soil</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="soil"
-            name="soil"
-            value="humus"
-          />Humus</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="soil"
-            name="soil"
-            value="soddy"
-          />Soddy</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="soil"
-            name="soil"
-            value="peat"
-          />Peat</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="soil"
-            name="soil"
-            value="perlite"
-          />Perlite</label
-        >
-      </div>
+              <!-- Soil Types -->
+              <div class="gs-field gs-field-full">
+                <span class="gs-label">Soil Types</span>
+                <div class="checkbox-group">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="soil"
+                      name="soil"
+                      value="sand"
+                    />Sand
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="soil"
+                      name="soil"
+                      value="sod"
+                    />Sod
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="soil"
+                      name="soil"
+                      value="deciduous_soil"
+                    />Deciduous Soil
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="soil"
+                      name="soil"
+                      value="humus"
+                    />Humus
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="soil"
+                      name="soil"
+                      value="soddy"
+                    />Soddy
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="soil"
+                      name="soil"
+                      value="peat"
+                    />Peat
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="soil"
+                      name="soil"
+                      value="perlite"
+                    />Perlite
+                  </label>
+                </div>
+              </div>
 
-      <label>Seasons</label>
-      <div class="checkbox-group">
-        <label
-          ><input
-            type="checkbox"
-            class="season"
-            name="season"
-            value="spring"
-          />Spring</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="season"
-            name="season"
-            value="summer"
-          />Summer</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="season"
-            name="season"
-            value="fall"
-          />Fall</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            class="season"
-            name="season"
-            value="winter"
-          />Winter</label
-        >
-      </div>
+              <!-- Seasons -->
+              <div class="gs-field gs-field-full">
+                <span class="gs-label">Seasons</span>
+                <div class="checkbox-group">
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="season"
+                      name="season"
+                      value="spring"
+                    />Spring
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="season"
+                      name="season"
+                      value="summer"
+                    />Summer
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="season"
+                      name="season"
+                      value="fall"
+                    />Fall
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      class="season"
+                      name="season"
+                      value="winter"
+                    />Winter
+                  </label>
+                </div>
+              </div>
+            </div>
 
-      <button type="button" onclick="Search()">Search</button>
-    </form>
+            <!-- BUTTONS -->
+            <div class="gs-actions">
+              <button type="reset" class="gs-btn-ghost">Reset</button>
+              <!-- keep JS behaviour -->
+              <button
+                type="button"
+                onclick="Search()"
+                class="gs-btn-primary"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </section>
 
-    <div id="results">
-      <h2 id="results_count">Results</h2>
-      <!-- Export buttons -->
-      <div style="display: flex; gap: 8px; margin-bottom: 12px">
-        <button type="button" id="exportCsvBtn">Export CSV</button>
-        <button type="button" id="exportJsonBtn">Export JSON</button>
-      </div>
+        <!-- RESULTS CARD -->
+        <section id="results" class="gs-card gs-results">
+          <div class="gs-results-header">
+            <h2 id="results_count">Results</h2>
 
-      <div id="plant_list">No results yet.</div>
+            <!-- Export buttons -->
+            <div class="gs-actions">
+              <button
+                type="button"
+                id="exportCsvBtn"
+                class="gs-btn-ghost"
+              >
+                Export CSV
+              </button>
+              <button
+                type="button"
+                id="exportJsonBtn"
+                class="gs-btn-ghost"
+              >
+                Export JSON
+              </button>
+            </div>
+          </div>
+
+          <div id="plant_list">No results yet.</div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
+
