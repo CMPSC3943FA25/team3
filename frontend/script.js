@@ -1,4 +1,4 @@
-+let CURRENT_RESULTS = [];
+let CURRENT_RESULTS = [];
 async function Search() {
   let poisonous = document.querySelector("#poisonous").value;
   if (poisonous === "true") poisonous = true;
