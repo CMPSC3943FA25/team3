@@ -1,9 +1,12 @@
 from flask import Flask, request
 from flask_cors import CORS
 import json
+import os
 
 app = Flask(__name__)
 CORS(app)
+
+plant_data_path = os.path.join(os.path.dirname(__file__), 'data', 'plant_data.json')
 
 # PUT /api/plant to create a plant
 @app.put("/api/plant")
@@ -13,7 +16,7 @@ def create_plant():
         req = request.get_json()
 
         # Get "database" (current a file)
-        with open("./data/plant_data.json", "r") as file:
+        with open(plant_data_path, "r") as file:
             plant_data = json.load(file)
             return '[]',200
 
@@ -21,7 +24,7 @@ def create_plant():
         plant_data.append(req)
 
         # Update database
-        with open("./data/plant_data.json", "w") as file:
+        with open(plant_data_path, "w") as file:
             file.write(json.dumps(plant_data, indent=4))
 
         return "200 OK", 200
@@ -37,7 +40,7 @@ def search_plants():
         req = request.get_json()
 
         # Load "database" (currently a file)
-        with open("./data/plant_data.json", "r") as file:
+        with open(plant_data_path, "r") as file:
             plant_data = json.load(file)
         
         if len(plant_data) == 0:
