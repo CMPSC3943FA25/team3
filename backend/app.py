@@ -1,6 +1,7 @@
 from flask import Flask, request
 from flask_cors import CORS
 import json
+import os
 
 app = Flask(__name__)
 
@@ -26,6 +27,8 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": ["http://127.0.0.1:5500", "http://localhost:5500"],
      "allow_headers": "*", "methods": ["GET", "POST", "OPTIONS"]}})
 
+plant_data_path = os.path.join(os.path.dirname(__file__), 'data', 'plant_data.json')
+
 # PUT /api/plant to create a plant
 
 
@@ -36,7 +39,7 @@ def create_plant():
         req = request.get_json()
 
         # Get "database" (current a file)
-        with open("./data/plant_data.json", "r") as file:
+        with open(plant_data_path, "r") as file:
             plant_data = json.load(file)
             return '[]', 200
 
@@ -44,7 +47,7 @@ def create_plant():
         plant_data.append(req)
 
         # Update database
-        with open("./data/plant_data.json", "w") as file:
+        with open(plant_data_path, "w") as file:
             file.write(json.dumps(plant_data, indent=4))
 
         return "200 OK", 200
@@ -62,7 +65,7 @@ def search_plants():
         req = request.get_json()
 
         # Load "database" (currently a file)
-        with open("./data/plant_data.json", "r") as file:
+        with open(plant_data_path, "r") as file:
             plant_data = json.load(file)
 
         if len(plant_data) == 0:
@@ -70,6 +73,7 @@ def search_plants():
             return '[]', 200
 
         # Now we start filtering based on request params
+feature/nerish-branch
         if "poisonous" in req and req["poisonous"] != "any":
             plant_data = [p for p in plant_data if p.get(
                 "poisonous") == req["poisonous"]]
@@ -183,7 +187,6 @@ def search_plants():
         if len(plant_data) == 0:
             print("No plant data after Max Temp")
             return '[]', 200
-
         # Return filtered (currently just returns request for testing)
         return json.dumps(plant_data, indent=4)
     except Exception as e:
