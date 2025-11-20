@@ -29,6 +29,8 @@ async function Search() {
     max_temperature: QueryElement("#max_temp"),
     max_height: QueryElement("#max_height"),
     max_spread: QueryElement("#max_spread"),
+    min_expected_lifespan_years: QueryElement("#min_expected_lifespan_years"),
+    max_expected_lifespan_years: QueryElement("#max_expected_lifespan_years"),
     water_frequency_min_hours: null,
     water_frequency_max_hours: null,
     repot_frequency_min_hours: null,
@@ -156,6 +158,10 @@ function PopulateResults(plants) {
     const max_spread = document.createElement("p");
     max_spread.textContent = `Max Spread: ${plant.max_spread_feet} feet`;
     panel.appendChild(max_spread);
+
+    const expected_lifespan = document.createElement("p");
+    expected_lifespan.textContent = `Expected Lifespan: ${plant.min_expected_lifespan_years}-${plant.max_expected_lifespan_years} years`;
+    panel.appendChild(expected_lifespan);
 
     const poisonous = document.createElement("p");
     poisonous.textContent = plant.poisonous

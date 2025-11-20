@@ -134,6 +134,14 @@ def search_plants():
             plant_data = [p for p in plant_data if req.get(
                 "max_spread") >= p.get("max_spread_feet")]
 
+        if req["min_expected_lifespan_years"] is not None:
+            plant_data = [p for p in plant_data if req.get(
+                "min_expected_lifespan_years") <= p.get("min_expected_lifespan_years")]
+
+        if req["max_expected_lifespan_years"] is not None:
+            plant_data = [p for p in plant_data if req.get(
+                "max_expected_lifespan_years") >= p.get("max_expected_lifespan_years")]
+
         # Return filtered (currently just returns request for testing)
         return json.dumps(plant_data, indent=4)
     except Exception as e:
