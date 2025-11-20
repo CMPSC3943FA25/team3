@@ -4,11 +4,34 @@ import json
 import os
 
 app = Flask(__name__)
-CORS(app)
+
+# ✅ CORS configuration (must come after app is created)
+CORS(app, resources={r"/*": {
+    "origins": ["http://127.0.0.1:5500", "http://localhost:5500"],
+    "allow_headers": "*",
+    "methods": ["GET", "POST", "OPTIONS"]
+}})
+
+
+@app.after_request
+def after_request(response):
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Headers",
+                         "Content-Type,Authorization")
+    response.headers.add("Access-Control-Allow-Methods",
+                         "GET,PUT,POST,DELETE,OPTIONS")
+    return response
+
+
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": ["http://127.0.0.1:5500", "http://localhost:5500"],
+     "allow_headers": "*", "methods": ["GET", "POST", "OPTIONS"]}})
 
 plant_data_path = os.path.join(os.path.dirname(__file__), 'data', 'plant_data.json')
 
 # PUT /api/plant to create a plant
+
+
 @app.put("/api/plant")
 def create_plant():
     try:
@@ -18,7 +41,7 @@ def create_plant():
         # Get "database" (current a file)
         with open(plant_data_path, "r") as file:
             plant_data = json.load(file)
-            return '[]',200
+            return '[]', 200
 
         # Append to database. Might add a filter later to overwrite with same name, but unnecessary for now
         plant_data.append(req)
@@ -33,6 +56,8 @@ def create_plant():
         return "Internal Server Error", 200
 
 # POST /api/search to search a plant
+
+
 @app.post("/api/search")
 def search_plants():
     try:
@@ -42,65 +67,134 @@ def search_plants():
         # Load "database" (currently a file)
         with open(plant_data_path, "r") as file:
             plant_data = json.load(file)
-        
+
         if len(plant_data) == 0:
             print("No plant data loaded!")
-            return '[]',200
+            return '[]', 200
 
         # Now we start filtering based on request params
-        if req["poisonous"] is not None:
-            plant_data = [p for p in plant_data if p.get("poisonous") == req["poisonous"]]
+feature/nerish-branch
+        if "poisonous" in req and req["poisonous"] != "any":
+            plant_data = [p for p in plant_data if p.get(
+                "poisonous") == req["poisonous"]]
 
-        if req["difficulty"] is not None:
-            plant_data = [p for p in plant_data if p.get("difficulty") == req["difficulty"]]
+        if len(plant_data) == 0:
+            print("No plant data after Poisonous")
+            return '[]', 200
 
-        if req["water_frequency_min_hours"] is not None:
-            plant_data = [p for p in plant_data if p.get("water_frequency_min_hours") == req["water_frequency_min_hours"]]
-        
-        if req["water_frequency_min_hours"] is not None:
-            plant_data = [p for p in plant_data if p.get("water_frequency_max_hours") == req["water_frequency_max_hours"]]
+        if "difficulty" in req and req["difficulty"] != "any":
+            plant_data = [p for p in plant_data if p.get(
+                "difficulty") == req["difficulty"]]
 
-        if req["repot_frequency_min_hours"] is not None:
-            plant_data = [p for p in plant_data if p.get("repot_frequency_min_hours") == req["repot_frequency_min_hours"]]
+            # Filter by maintenance level
+        if "maintenance" in req and req["maintenance"] != "any":
+            plant_data = [p for p in plant_data if p.get(
+                "maintenance") == req["maintenance"]]
 
-        if req["repot_frequency_min_hours"] is not None:
-            plant_data = [p for p in plant_data if p.get("repot_frequency_min_hours") == req["repot_frequency_min_hours"]]
+        if len(plant_data) == 0:
+            print("No plant data after Maintenance Level")
+            return '[]', 200
+
+        if len(plant_data) == 0:
+            print("No plant data after Difficulty")
+            return '[]', 200
+
+        if "water_every_n_hours" in req:
+            water_frequency = req.get("water_frequency")
+            plant_data = [
+                p for p in plant_data if (
+                    # If the user wants to water plants once per week, we need to filter for plants between the earliest and latest
+                    (water_frequency >= p.get("water_every_n_hours").get("start"))
+                    and
+                    (water_frequency <= p.get("water_every_n_hours").get("end"))
+                )
+            ]
+
+        if len(plant_data) == 0:
+            print("No plant data after Water Frequency")
+            return '[]', 200
+
+        if "repot_frequency" in req:
+            report_frequency = req.get("repot_frequency")
+            plant_data = [
+                p for p in plant_data if (
+                    (repot_frequency >= p.get("repot_every_n_months").get("start"))
+                    and
+                    (repot_frequency <= p.get("repot_every_n_months").get("end"))
+                )
+            ]
+
+        if len(plant_data) == 0:
+            print("No plant data after Repot Frequency")
+            return '[]', 200
 
         # Check if request soil is a subset of a plant's soil
-        if req["soils"] is not None:
-            plant_data = [p for p in plant_data if set(req.get("soils")).issubset(set(p.get("soils")))]
+        if "soil" in req:
+            plant_data = [p for p in plant_data if set(
+                req.get("soil")).issubset(set(p.get("soil")))]
 
-        if req["lighting"] is not None:
-            plant_data = [p for p in plant_data if p.get("lighting") == req["lighting"]]
+        if len(plant_data) == 0:
+            print("No plant data after Soil")
+            return '[]', 200
 
-        if req["humidity"] is not None:
-            plant_data = [p for p in plant_data if p.get("humidity") == req["humidity"]]
+        if "lighting" in req and req["lighting"] != "any":
+            plant_data = [p for p in plant_data if p.get(
+                "lighting") == req["lighting"]]
 
-        if req["colors"] is not None:
-            plant_data = [p for p in plant_data if set(req.get("colors")).issubset(set(p.get("colors")))]
+        if len(plant_data) == 0:
+            print("No plant data after Lighting")
+            return '[]', 200
+
+        if "humidity" in req and req["humidity"] != "any":
+            plant_data = [p for p in plant_data if p.get(
+                "humidity") == req["humidity"]]
+
+        if len(plant_data) == 0:
+            print("No plant data after Humidity")
+            return '[]', 200
 
         # Check if request seasons is a subset of a plant's seasons
-        if req["seasons"] is not None:
-            plant_data = [p for p in plant_data if set(req.get("seasons")).issubset(set(p.get("seasons")))]
+        print(set(req.get("seasons")))
+        if "seasons" in req:
+            plant_data = [p for p in plant_data if set(
+                req.get("seasons")).issubset(set(p.get("seasons")))]
+
+        if len(plant_data) == 0:
+            print("No plant data after Seasons")
+            return '[]', 200
 
         # Check if request hardiness is a subset of a plant's hardiness
-        if req["hardiness"] is not None:
-            plant_data = [p for p in plant_data if set(req.get("hardiness")).issubset(set(p.get("hardiness")))]
+        if "hardiness" in req:
+            plant_data = [p for p in plant_data if set(
+                req.get("hardiness")).issubset(set(p.get("hardiness")))]
 
-        if req["min_temperature"] is not None:
-            plant_data = [p for p in plant_data if req.get("min_temperature") >= p.get("min_temperature")]
+        if len(plant_data) == 0:
+            print("No plant data after Hardiness")
+            return '[]', 200
 
-        if req["max_temperature"] is not None:
-            plant_data = [p for p in plant_data if req.get("max_temperature") <= p.get("max_temperature")]
+        if "min_temp" in req:
+            plant_data = [p for p in plant_data if req.get(
+                "min_temp") >= p.get("temperature").get("min")]
 
-        if req["max_height"] is not None:
-            plant_data = [p for p in plant_data if req.get("max_height") >= p.get("max_height_feet")]
+        if len(plant_data) == 0:
+            print("No plant data after Min Temp")
+            return '[]', 200
 
-        if req["max_spread"] is not None:
-            plant_data = [p for p in plant_data if req.get("max_spread") >= p.get("max_spread_feet")]
+        if "max_temp" in req:
+            plant_data = [p for p in plant_data if req.get(
+                "max_temp") <= p.get("temperature").get("max")]
 
+        if len(plant_data) == 0:
+            print("No plant data after Max Temp")
+            return '[]', 200
         # Return filtered (currently just returns request for testing)
         return json.dumps(plant_data, indent=4)
     except Exception as e:
         print(e)
         return "Internal Server Error", 500
+
+
+print("Starting Flask server...")
+
+if __name__ == "__main__":
+    app.run(debug=True)
