@@ -23,6 +23,7 @@ async function Search() {
     difficulty: QueryElement("#difficulty"),
     lighting: QueryElement("#lighting"),
     humidity: QueryElement("#humidity"),
+    drought_tolerant: QueryElement("#drought_tolerant"),
     min_temperature: QueryElement("#min_temp"),
     max_temperature: QueryElement("#max_temp"),
     max_height: QueryElement("#max_height"),
@@ -112,6 +113,12 @@ function PopulateResults(plants) {
     const humidity = document.createElement("p");
     humidity.textContent = `Humidity: ${NormalizeName(plant.humidity)}`;
     panel.appendChild(humidity);
+
+    const drought_tolerant = document.createElement("p");
+    drought_tolerant.textContent = plant.drought_tolerant
+      ? "Drought Tolerant"
+      : "Not Drought Tolerant";
+    panel.appendChild(drought_tolerant);
 
     const seasons = document.createElement("p");
     seasons.textContent = `Seasons: ${plant.seasons

@@ -67,6 +67,16 @@
                 </select>
               </div>
 
+              <!-- Drought Tolerant -->
+              <div class="gs-field">
+                <label for="drought_tolerant">Drought Tolerant</label>
+                <select id="drought_tolerant" class="gs-input">
+                  <option value="any">Any</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+
               <!-- Min Temp -->
               <div class="gs-field">
                 <label for="min_temp">Min Temperature (°F)</label>
@@ -285,11 +295,7 @@
             <div class="gs-actions">
               <button type="reset" class="gs-btn-ghost">Reset</button>
               <!-- keep JS behaviour -->
-              <button
-                type="button"
-                onclick="Search()"
-                class="gs-btn-primary"
-              >
+              <button type="button" onclick="Search()" class="gs-btn-primary">
                 Search
               </button>
             </div>
@@ -303,18 +309,10 @@
 
             <!-- Export buttons -->
             <div class="gs-actions">
-              <button
-                type="button"
-                id="exportCsvBtn"
-                class="gs-btn-ghost"
-              >
+              <button type="button" id="exportCsvBtn" class="gs-btn-ghost">
                 Export CSV
               </button>
-              <button
-                type="button"
-                id="exportJsonBtn"
-                class="gs-btn-ghost"
-              >
+              <button type="button" id="exportJsonBtn" class="gs-btn-ghost">
                 Export JSON
               </button>
             </div>
@@ -326,4 +324,3 @@
     </div>
   </body>
 </html>
-
