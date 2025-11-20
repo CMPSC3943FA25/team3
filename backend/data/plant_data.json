@@ -34,7 +34,8 @@
         "min_temperature": 64,
         "max_temperature": 77,
         "min_expected_lifespan_years": 2,
-        "max_expected_lifespan_years": 5
+        "max_expected_lifespan_years": 5,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -79,7 +80,8 @@
         "min_temperature": 59,
         "max_temperature": 69,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 3
+        "max_expected_lifespan_years": 3,
+        "portability": "portable"
     },
     {
         "poisonous": false,
@@ -116,7 +118,8 @@
         "min_temperature": 59,
         "max_temperature": 68,
         "min_expected_lifespan_years": 5,
-        "max_expected_lifespan_years": 10
+        "max_expected_lifespan_years": 10,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -156,7 +159,8 @@
         "min_temperature": 44,
         "max_temperature": 80,
         "min_expected_lifespan_years": 5,
-        "max_expected_lifespan_years": 25
+        "max_expected_lifespan_years": 25,
+        "portability": "portable"
     },
     {
         "poisonous": false,
@@ -210,7 +214,8 @@
         "min_temperature": 59,
         "max_temperature": 82,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 3
+        "max_expected_lifespan_years": 3,
+        "portability": "portable"
     },
     {
         "poisonous": false,
@@ -245,7 +250,8 @@
         "min_temperature": 59,
         "max_temperature": 68,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 1
+        "max_expected_lifespan_years": 1,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -284,7 +290,8 @@
         "min_temperature": 57,
         "max_temperature": 75,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 10
+        "max_expected_lifespan_years": 10,
+        "portability": "portable"
     },
     {
         "poisonous": false,
@@ -334,7 +341,8 @@
         "min_temperature": 41,
         "max_temperature": 80,
         "min_expected_lifespan_years": 20,
-        "max_expected_lifespan_years": 50
+        "max_expected_lifespan_years": 50,
+        "portability": "semi-portable"
     },
     {
         "poisonous": false,
@@ -386,7 +394,8 @@
         "min_temperature": 60,
         "max_temperature": 80,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 1
+        "max_expected_lifespan_years": 1,
+        "portability": "portable"
     },
     {
         "poisonous": false,
@@ -422,7 +431,8 @@
         "min_temperature": 44,
         "max_temperature": 86,
         "min_expected_lifespan_years": 20,
-        "max_expected_lifespan_years": 30
+        "max_expected_lifespan_years": 30,
+        "portability": "portable"
     },
     {
         "poisonous": false,
@@ -467,7 +477,8 @@
         "min_temperature": 50,
         "max_temperature": 77,
         "min_expected_lifespan_years": 10,
-        "max_expected_lifespan_years": 20
+        "max_expected_lifespan_years": 20,
+        "portability": "portable"
     },
     {
         "poisonous": false,
@@ -512,7 +523,8 @@
         "min_temperature": 59,
         "max_temperature": 68,
         "min_expected_lifespan_years": 3,
-        "max_expected_lifespan_years": 6
+        "max_expected_lifespan_years": 6,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -554,7 +566,8 @@
         "min_temperature": 44,
         "max_temperature": 64,
         "min_expected_lifespan_years": 8,
-        "max_expected_lifespan_years": 20
+        "max_expected_lifespan_years": 20,
+        "portability": "not_portable"
     },
     {
         "poisonous": true,
@@ -610,7 +623,8 @@
         "min_temperature": 44,
         "max_temperature": 70,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 1
+        "max_expected_lifespan_years": 1,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -646,7 +660,8 @@
         "min_temperature": 59,
         "max_temperature": 75,
         "min_expected_lifespan_years": 3,
-        "max_expected_lifespan_years": 10
+        "max_expected_lifespan_years": 10,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -691,7 +706,8 @@
         "min_temperature": 55,
         "max_temperature": 72,
         "min_expected_lifespan_years": 10,
-        "max_expected_lifespan_years": 50
+        "max_expected_lifespan_years": 50,
+        "portability": "semi-portable"
     },
     {
         "poisonous": true,
@@ -733,7 +749,8 @@
         "min_temperature": 50,
         "max_temperature": 68,
         "min_expected_lifespan_years": 60,
-        "max_expected_lifespan_years": 100
+        "max_expected_lifespan_years": 100,
+        "portability": "not_portable"
     },
     {
         "poisonous": true,
@@ -772,7 +789,8 @@
         "min_temperature": 59,
         "max_temperature": 68,
         "min_expected_lifespan_years": 30,
-        "max_expected_lifespan_years": 50
+        "max_expected_lifespan_years": 50,
+        "portability": "semi-portable"
     },
     {
         "poisonous": false,
@@ -823,7 +841,8 @@
         "min_temperature": 50,
         "max_temperature": 66,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 1
+        "max_expected_lifespan_years": 1,
+        "portability": "semi-portable"
     },
     {
         "poisonous": true,
@@ -874,7 +893,8 @@
         "min_temperature": 50,
         "max_temperature": 59,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 1
+        "max_expected_lifespan_years": 1,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -922,7 +942,8 @@
         "min_temperature": 50,
         "max_temperature": 68,
         "min_expected_lifespan_years": 2,
-        "max_expected_lifespan_years": 5
+        "max_expected_lifespan_years": 5,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -966,7 +987,8 @@
         "min_temperature": 32,
         "max_temperature": 68,
         "min_expected_lifespan_years": 5,
-        "max_expected_lifespan_years": 20
+        "max_expected_lifespan_years": 20,
+        "portability": "portable"
     },
     {
         "poisonous": true,
@@ -1002,7 +1024,8 @@
         "min_temperature": 60,
         "max_temperature": 69,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 1
+        "max_expected_lifespan_years": 1,
+        "portability": "semi-portable"
     },
     {
         "name": "golden_pothos_/_epipremnum_aureum_/_silver_vine",
@@ -1041,7 +1064,8 @@
         "min_temperature": 60,
         "max_temperature": 90,
         "min_expected_lifespan_years": 10,
-        "max_expected_lifespan_years": 30
+        "max_expected_lifespan_years": 30,
+        "portability": "portable"
     },
     {
         "name": "snake_plant_/_sansevieria_trifasciata",
@@ -1079,7 +1103,8 @@
         "min_temperature": 60,
         "max_temperature": 83,
         "min_expected_lifespan_years": 5,
-        "max_expected_lifespan_years": 25
+        "max_expected_lifespan_years": 25,
+        "portability": "portable"
     },
     {
         "name": "spider_plant_/_chlorophytum_comosum",
@@ -1114,7 +1139,8 @@
         "min_temperature": 50,
         "max_temperature": 80,
         "min_expected_lifespan_years": 20,
-        "max_expected_lifespan_years": 30
+        "max_expected_lifespan_years": 30,
+        "portability": "portable"
     },
     {
         "name": "jade_plant_/_crassula_ovata",
@@ -1151,7 +1177,8 @@
         "min_temperature": 50,
         "max_temperature": 83,
         "min_expected_lifespan_years": 30,
-        "max_expected_lifespan_years": 70
+        "max_expected_lifespan_years": 70,
+        "portability": "semi-portable"
     },
     {
         "name": "flamingo_lily_/_anthurium_andraeanum",
@@ -1191,7 +1218,8 @@
         "min_temperature": 64,
         "max_temperature": 85,
         "min_expected_lifespan_years": 5,
-        "max_expected_lifespan_years": 15
+        "max_expected_lifespan_years": 15,
+        "portability": "portable"
     },
     {
         "name": "rubber_plant_/_ficus_elastica",
@@ -1228,7 +1256,8 @@
         "min_temperature": 59,
         "max_temperature": 75,
         "min_expected_lifespan_years": 30,
-        "max_expected_lifespan_years": 100
+        "max_expected_lifespan_years": 100,
+        "portability": "semi-portable"
     },
     {
         "name": "moth_orchid_/_phalaenopsis_amabilis",
@@ -1266,7 +1295,8 @@
         "min_temperature": 64,
         "max_temperature": 85,
         "min_expected_lifespan_years": 10,
-        "max_expected_lifespan_years": 20
+        "max_expected_lifespan_years": 20,
+        "portability": "portable"
     },
     {
         "name": "thanksgiving_cactus_/_schlumbergera_truncata",
@@ -1302,7 +1332,8 @@
         "min_temperature": 68,
         "max_temperature": 80,
         "min_expected_lifespan_years": 30,
-        "max_expected_lifespan_years": 100
+        "max_expected_lifespan_years": 100,
+        "portability": "portable"
     },
     {
         "name": "avocado_/_persea_americana",
@@ -1341,7 +1372,8 @@
         "min_temperature": 60,
         "max_temperature": 85,
         "min_expected_lifespan_years": 30,
-        "max_expected_lifespan_years": 80
+        "max_expected_lifespan_years": 80,
+        "portability": "not_portable"
     },
     {
         "name": "hemp_/_cannabis_sativa",
@@ -1390,7 +1422,8 @@
         "min_temperature": 59,
         "max_temperature": 75,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 1
+        "max_expected_lifespan_years": 1,
+        "portability": "portable"
     },
     {
         "name": "sweet_mint_/_mentha_x_suavis",
@@ -1430,7 +1463,8 @@
         "min_temperature": 24,
         "max_temperature": 75,
         "min_expected_lifespan_years": 1,
-        "max_expected_lifespan_years": 10
+        "max_expected_lifespan_years": 10,
+        "portability": "portable"
     },
     {
         "name": "weeping_fig_/_ficus_benjamina",
@@ -1468,7 +1502,8 @@
         "min_temperature": 59,
         "max_temperature": 85,
         "min_expected_lifespan_years": 20,
-        "max_expected_lifespan_years": 100
+        "max_expected_lifespan_years": 100,
+        "portability": "semi-portable"
     },
     {
         "name": "blue_point_juniper_/_juniperus_chinensis_'blue_point'",
@@ -1511,6 +1546,7 @@
         "min_temperature": -40,
         "max_temperature": 85,
         "min_expected_lifespan_years": 50,
-        "max_expected_lifespan_years": 100
+        "max_expected_lifespan_years": 100,
+        "portability": "not_portable"
     }
 ]

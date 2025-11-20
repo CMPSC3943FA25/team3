@@ -25,6 +25,7 @@ async function Search() {
     humidity: QueryElement("#humidity"),
     drought_tolerant: QueryElement("#drought_tolerant"),
     grow_speed: QueryElement("#grow_speed"),
+    portability: QueryElement("#portability"),
     min_temperature: QueryElement("#min_temp"),
     max_temperature: QueryElement("#max_temp"),
     max_height: QueryElement("#max_height"),
@@ -127,6 +128,10 @@ function PopulateResults(plants) {
     grow_speed.textContent =
       plant.repot_frequency_min_hours <= 6 ? "Grows Quickly" : "Grows Slowly";
     panel.appendChild(grow_speed);
+
+    const portability = document.createElement("p");
+    portability.textContent = NormalizeName(plant.portability);
+    panel.appendChild(portability);
 
     const seasons = document.createElement("p");
     seasons.textContent = `Seasons: ${plant.seasons

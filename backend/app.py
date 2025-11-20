@@ -104,6 +104,10 @@ def search_plants():
                 plant_data = [p for p in plant_data
                     if p.get("repot_frequency_min_months") > 6]
 
+        if req["portability"] is not None:
+            plant_data = [p for p in plant_data if p.get(
+                "portability") == req["portability"]]
+
         if req["colors"] is not None:
             plant_data = [p for p in plant_data if set(
                 req.get("colors")).issubset(set(p.get("colors")))]
