@@ -24,6 +24,7 @@ async function Search() {
     lighting: QueryElement("#lighting"),
     humidity: QueryElement("#humidity"),
     drought_tolerant: QueryElement("#drought_tolerant"),
+    grow_speed: QueryElement("#grow_speed"),
     min_temperature: QueryElement("#min_temp"),
     max_temperature: QueryElement("#max_temp"),
     max_height: QueryElement("#max_height"),
@@ -119,6 +120,11 @@ function PopulateResults(plants) {
       ? "Drought Tolerant"
       : "Not Drought Tolerant";
     panel.appendChild(drought_tolerant);
+
+    const grow_speed = document.createElement("p");
+    grow_speed.textContent =
+      plant.repot_frequency_min_hours <= 6 ? "Grows Quickly" : "Grows Slowly";
+    panel.appendChild(grow_speed);
 
     const seasons = document.createElement("p");
     seasons.textContent = `Seasons: ${plant.seasons

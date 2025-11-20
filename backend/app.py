@@ -96,10 +96,13 @@ def search_plants():
                 "humidity") == req["humidity"]]
 
         # Fast growth filter
-        if req.get("fast_growth") is not None:
-            plant_data = [p for p in plant_data
-                          if p.get("repot_frequency_min_months") is not None
-                          and p.get("repot_frequency_min_months") <= 6]
+        if req["grow_speed"] is not None:
+            if req["grow_speed"] == "fast":
+                plant_data = [p for p in plant_data
+                    if p.get("repot_frequency_min_months") <= 6]
+            elif req["grow_speed"] == "slow":
+                plant_data = [p for p in plant_data
+                    if p.get("repot_frequency_min_months") > 6]
 
         if req["colors"] is not None:
             plant_data = [p for p in plant_data if set(
