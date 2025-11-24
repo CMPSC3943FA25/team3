@@ -108,6 +108,11 @@ def search_plants():
             plant_data = [p for p in plant_data if p.get(
                 "portability") == req["portability"]]
 
+        if req["hardiness"] is not None:
+            print(req.get("hardiness"))
+            print(plant_data[0].get("hardiness"))
+            plant_data = [p for p in plant_data if req.get("hardiness") in p.get("hardiness")]
+
         if req["colors"] is not None:
             plant_data = [p for p in plant_data if set(
                 req.get("colors")).issubset(set(p.get("colors")))]
@@ -116,11 +121,6 @@ def search_plants():
         if req["seasons"] is not None:
             plant_data = [p for p in plant_data if set(
                 req.get("seasons")).issubset(set(p.get("seasons")))]
-
-        # Check if request hardiness is a subset of a plant's hardiness
-        if req["hardiness"] is not None:
-            plant_data = [p for p in plant_data if set(
-                req.get("hardiness")).issubset(set(p.get("hardiness")))]
 
         if req["min_temperature"] is not None:
             plant_data = [p for p in plant_data if req.get(
