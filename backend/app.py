@@ -150,7 +150,7 @@ def search_plants():
         if req["zip_code"] is not None:
             with open(zip_zones_path, "r") as file:
                 zip_hardiness = json.load(file)
-            plant_data = [p for p in plant_data if zip_hardiness[req["zip_code"]] in p.get("hardiness")]
+            plant_data = [p for p in plant_data if zip_hardiness[str(req["zip_code"])] in p.get("hardiness")]
 
         # Return filtered (currently just returns request for testing)
         return json.dumps(plant_data, indent=4)
