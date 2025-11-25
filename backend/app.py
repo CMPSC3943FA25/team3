@@ -9,6 +9,9 @@ CORS(app)
 plant_data_path = os.path.join(
     os.path.dirname(__file__), 'data', 'plant_data.json')
 
+zip_zones_path = os.path.join(
+    os.path.dirname(__file__), 'data', 'zip_zones.json')
+
 # PUT /api/plant to create a plant
 
 
@@ -109,8 +112,6 @@ def search_plants():
                 "portability") == req["portability"]]
 
         if req["hardiness"] is not None:
-            print(req.get("hardiness"))
-            print(plant_data[0].get("hardiness"))
             plant_data = [p for p in plant_data if req.get("hardiness") in p.get("hardiness")]
 
         if req["colors"] is not None:
@@ -145,6 +146,11 @@ def search_plants():
         if req["max_expected_lifespan_years"] is not None:
             plant_data = [p for p in plant_data if req.get(
                 "max_expected_lifespan_years") >= p.get("max_expected_lifespan_years")]
+
+        if req["zip_code"] is not None:
+            with open(zip_zones_path, "r") as file:
+                zip_hardiness = json.load(file)
+            plant_data = [p for p in plant_data if zip_hardiness[req["zip_code"]] in p.get("hardiness")]
 
         # Return filtered (currently just returns request for testing)
         return json.dumps(plant_data, indent=4)

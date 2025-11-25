@@ -40,6 +40,7 @@ async function Search() {
     colors: QueryElement(".color"),
     soils: QueryElement(".soil"),
     seasons: QueryElement(".season"),
+    zip_code: QueryElement("#zip_code").toString(),
   };
 
   const res = await fetch("http://127.0.0.1:5000/api/search", {
