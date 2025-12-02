@@ -224,7 +224,7 @@
         "name": "Sand Plum",
         "type": "Fruit",
         "frost_tolerance": "high",
-        "additional_information": "Wild native plum found across Oklahoma. Commonly used in jams!",
+        "additional_information": "Wild native plum found across Oklahoma. Commonly used in jams! Traditionally used as medicine.",
         "poisonous": false,
         "difficulty": "medium",
         "water_every_n_hours": {
